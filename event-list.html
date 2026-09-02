@@ -17,20 +17,112 @@
 <body>
     <header class="site-header">
         <div class="header-inner">
-            <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="main-navigation" aria-expanded="false"><img src="./img/icn-menu.svg" alt=""></button>
-            <a href="./index.html" class="logo" aria-label="TARTY 홈"><img src="./img/logo.svg" alt="TARTY"></a>
+            <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="main-navigation" aria-expanded="false">
+                <img src="./img/icn-menu.svg" alt="">
+            </button>
+
+            <a href="./index.html" class="logo" aria-label="TARTY 홈">
+                <img src="./img/logo.svg" alt="TARTY">
+            </a>
+
             <nav class="main-nav" id="main-navigation" aria-label="주요 메뉴">
-                <div class="sidebar-header"><button class="sidebar-close" type="button" aria-label="메뉴 닫기"><span aria-hidden="true"></span></button></div>
+                <div class="sidebar-header">
+                    <button class="sidebar-close" type="button" aria-label="메뉴 닫기">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
                 <ul>
-                    <li class="nav-item"><a href="./product-list.html">Online Shop</a><button class="submenu-toggle" type="button" aria-label="Online Shop 하위 메뉴 펼치기" aria-expanded="false"><span aria-hidden="true"></span></button><ul class="submenu"><li><a href="./product-list.html">인기상품</a></li><li><a href="./event-list.html">이벤트</a></li><li><a href="#">후기</a></li></ul></li>
-                    <li class="nav-item"><a href="./product-list.html">Menu</a><button class="submenu-toggle" type="button" aria-label="Menu 하위 메뉴 펼치기" aria-expanded="false"><span aria-hidden="true"></span></button><ul class="submenu"><li><a href="./product-list.html">타르트</a></li><li><a href="#">케이크</a></li><li><a href="#">음료</a></li></ul></li>
-                    <li class="nav-item is-expanded"><a href="./event-list.html">Event</a><button class="submenu-toggle" type="button" aria-label="Event 하위 메뉴 접기" aria-expanded="true"><span aria-hidden="true"></span></button><ul class="submenu"><li><a href="./event-list.html">진행 중 이벤트</a></li><li><a href="#ended-events">종료된 이벤트</a></li></ul></li>
-                    <li class="nav-item"><a href="./brand.html">Brand</a><button class="submenu-toggle" type="button" aria-label="Brand 하위 메뉴 펼치기" aria-expanded="false"><span aria-hidden="true"></span></button><ul class="submenu"><li><a href="./brand.html">브랜드 소개</a></li><li><a href="#">매장 안내</a></li></ul></li>
+                    <li class="nav-item is-expanded">
+                        <a href="./index.html">Online Shop</a>
+                        <button class="submenu-toggle" type="button" aria-label="Online Shop 하위 메뉴 접기" aria-expanded="true">
+                            <span aria-hidden="true"></span>
+                        </button>
+                        <ul class="submenu">
+                            <li><a href="./product-list.html">인기상품</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">후기</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./product-list.html">Menu</a>
+                        <button class="submenu-toggle" type="button" aria-label="Menu 하위 메뉴 펼치기" aria-expanded="false">
+                            <span aria-hidden="true"></span>
+                        </button>
+                        <ul class="submenu">
+                            <li><a href="./product-list.html">타르트</a></li>
+                            <li><a href="#">케이크</a></li>
+                            <li><a href="#">음료</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./event-list.html">Event</a>
+                        <button class="submenu-toggle" type="button" aria-label="Event 하위 메뉴 펼치기" aria-expanded="false">
+                            <span aria-hidden="true"></span>
+                        </button>
+                        <ul class="submenu">
+                            <li><a href="./event-list.html">진행 중 이벤트</a></li>
+                            <li><a href="#">종료된 이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./brand.html">Brand</a>
+                        <button class="submenu-toggle" type="button" aria-label="Brand 하위 메뉴 펼치기" aria-expanded="false">
+                            <span aria-hidden="true"></span>
+                        </button>
+                        <ul class="submenu">
+                            <li><a href="./brand.html">브랜드 소개</a></li>
+                            <li><a href="#">매장 안내</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             <button class="menu-backdrop" type="button" aria-label="메뉴 닫기" tabindex="-1"></button>
-            <aside class="account-panel" id="account-panel" aria-label="회원 메뉴" inert><div class="account-panel-header"><button class="account-panel-close" type="button" aria-label="회원 메뉴 닫기"></button></div><nav><a href="#"><img src="./img/icn-login.svg" alt=""><span>로그인</span></a><a href="#"><img src="./img/icn-create-account.svg" alt=""><span>회원가입</span></a><a href="#"><img src="./img/icn-search.svg" alt=""><span>검색</span></a><a href="#"><img src="./img/icn-bag.svg" alt=""><span>장바구니</span></a><a href="#"><img src="./img/icn-profile.svg" alt=""><span>프로필</span></a></nav></aside>
-            <div class="header-actions"><button class="icon-btn" type="button" aria-label="로그인"><img src="./img/icn-login.svg" alt=""></button><button class="icon-btn" type="button" aria-label="회원가입"><img src="./img/icn-create-account.svg" alt=""></button><button class="icon-btn" type="button" aria-label="검색"><img src="./img/icn-search.svg" alt=""></button><button class="icon-btn" type="button" aria-label="장바구니"><img src="./img/icn-bag.svg" alt=""></button><button class="icon-btn profile-action" type="button" aria-label="회원 메뉴 열기" aria-controls="account-panel" aria-expanded="false"><img src="./img/icn-profile.svg" alt=""></button></div>
+
+            <aside class="account-panel" id="account-panel" aria-label="회원 메뉴" inert>
+                <div class="account-panel-header">
+                    <button class="account-panel-close" type="button" aria-label="회원 메뉴 닫기"></button>
+                </div>
+                <nav>
+                    <a href="#">
+                        <img src="./img/icn-login.svg" alt="">
+                        <span>로그인</span>
+                    </a>
+                    <a href="#">
+                        <img src="./img/icn-create-account.svg" alt="">
+                        <span>회원가입</span>
+                    </a>
+                    <a href="#">
+                        <img src="./img/icn-search.svg" alt="">
+                        <span>검색</span>
+                    </a>
+                    <a href="#">
+                        <img src="./img/icn-bag.svg" alt="">
+                        <span>장바구니</span>
+                    </a>
+                    <a href="#">
+                        <img src="./img/icn-profile.svg" alt="">
+                        <span>프로필</span>
+                    </a>
+                </nav>
+            </aside>
+
+            <div class="header-actions">
+                <button class="icon-btn" type="button" aria-label="로그인">
+                    <img src="./img/icn-login.svg" alt="">
+                </button>
+                <button class="icon-btn" type="button" aria-label="회원가입">
+                    <img src="./img/icn-create-account.svg" alt="">
+                </button>
+                <button class="icon-btn" type="button" aria-label="검색">
+                    <img src="./img/icn-search.svg" alt="">
+                </button>
+                <button class="icon-btn" type="button" aria-label="장바구니">
+                    <img src="./img/icn-bag.svg" alt="">
+                </button>
+                <button class="icon-btn profile-action" type="button" aria-label="회원 메뉴 열기" aria-controls="account-panel" aria-expanded="false">
+                    <img src="./img/icn-profile.svg" alt="">
+                </button>
+            </div>
         </div>
     </header>
 
