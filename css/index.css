@@ -300,7 +300,8 @@
     }
 
     .footer-company p {
-    margin: 0;
+        display: flex;
+        gap: 10px;
     }
 
     .footer-company .company-row+.company-row {
@@ -313,7 +314,6 @@
 
     .footer-company b {
     display: inline-block;
-    min-width: 112px;
     font-weight: 700;
     }
 
