@@ -208,8 +208,7 @@ button { font: inherit; }
 
 .product-detail-images,
 .product-detail-images img {
-    width: 80%;
-    margin: auto;
+    width: 100%;
     display: block;
 }
 
