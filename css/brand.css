@@ -1,0 +1,38 @@
+body { color: #6e452c; background: #fff; }
+.brand-page { margin-top: 100px; overflow: hidden; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.story-hero img, .discover-section img { width: 100%; display: block; }
+.making-section, .moments-section { text-align: center; }
+.making-section { padding: 98px 48px 0; }
+.making-section h2, .moments-section h2 { font-size: 36px; font-weight: 800; }
+.section-dots { width: 52px; height: 7px; margin: 20px auto 76px; display: block; background: radial-gradient(circle, #ff91a7 0 3px, transparent 4px) 0 0/26px 7px, radial-gradient(circle, #ffd65f 0 3px, transparent 4px) 13px 0/26px 7px; }
+.making-grid { width: min(1430px, 100%); margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; }
+.making-card { min-height: 690px; padding: 34px 34px 80px; border-radius: 220px; background: #fff8f2; box-sizing: border-box; }
+.making-card img { width: 100%; aspect-ratio: 1; display: block; border-radius: 50%; object-fit: cover; }
+.making-card h3 { margin-top: 68px; font-size: 22px; font-weight: 800; }
+.making-card p { margin-top: 27px; font-size: 16px; line-height: 1.45; }
+.moments-section { padding: 195px 48px 190px; }
+.moments-images { width: min(1180px, 100%); margin: 0 auto 45px; display: grid; grid-template-columns: repeat(2, 1fr); overflow: hidden; border-radius: 290px; }
+.moments-images img { width: 100%; display: block; }
+.moments-section p { font-size: 20px; line-height: 1.55; }
+.moments-section strong { margin-top: 28px; display: block; color: #ff839b; font-size: 25px; }
+@media (max-width: 1024px) {
+    .brand-page { margin-top: 64px; }
+    .making-section h2, .moments-section h2 { font-size: 28px; }
+    .making-card { min-height: 520px; padding: 25px 25px 55px; }
+    .making-card h3 { margin-top: 46px; }
+    .moments-section { padding-top: 140px; }
+}
+@media (max-width: 768px) {
+    .making-section { padding: 70px 24px 0; }
+    .making-section h2, .moments-section h2 { font-size: 21px; }
+    .section-dots { margin-bottom: 45px; }
+    .making-grid { grid-template-columns: 1fr; gap: 28px; }
+    .making-card { width: min(330px, 100%); min-height: 0; margin: 0 auto; padding: 22px 22px 50px; }
+    .making-card h3 { margin-top: 32px; font-size: 17px; }
+    .making-card p { margin-top: 16px; font-size: 12px; }
+    .moments-section { padding: 100px 24px; }
+    .moments-images { margin-bottom: 30px; border-radius: 100px; }
+    .moments-section p { font-size: 13px; }
+    .moments-section strong { margin-top: 18px; font-size: 16px; }
+}
