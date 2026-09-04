@@ -58,7 +58,7 @@
     .benefit-bar {
         background: #fdeff2;
         padding: 10px 0;
-        font-size: 1.23rem;
+        font-size: 0.8125rem;
         color: var(--color-main);
         border-top: 1px solid rgba(0, 0, 0, 0.03);
     }
@@ -117,7 +117,7 @@
 
     .item .sub {
         color: rgba(255, 255, 255, 0.6);
-        font-size: 1.23rem;
+        font-size: 0.8125rem;
     }
 
     .mid-cta {
@@ -305,14 +305,14 @@
 
     .benefit-bar span {
         color: var(--color-main);
-        font-size: 1.142rem;
+        font-size: 0.875rem;
     }
 
     .benefit-bar a {
         padding: 7px 19px;
         border: 1px solid var(--color-main);
         border-radius: 999px;
-        font-size: 1.23rem;
+        font-size: 0.8125rem;
         font-weight: var(--fw2);
     }
 
@@ -393,7 +393,7 @@
     .best-menu .item p {
         margin-top: 7px;
         color: var(--gray-600);
-        font-size: 1.45rem;
+        font-size: 0.6875rem;
     }
 
     .middle-banner,

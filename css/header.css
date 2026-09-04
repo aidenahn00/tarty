@@ -254,6 +254,8 @@ main {
     .header-actions {
         grid-column: 3;
         justify-self: end;
+
+        position: initial;
     }
 
     .header-actions .icon-btn {
