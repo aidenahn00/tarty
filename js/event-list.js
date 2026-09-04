@@ -17,6 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (visible) visibleCount += 1;
             });
             emptyMessage.hidden = visibleCount > 0;
+            document.querySelector('.event-grid-list').style.display = 'none';
+            
         });
     });
+
+    tabs[0].addEventListener('click', ()=>{
+        document.querySelector('.event-grid-list').style.display = 'grid';
+    });
+
 });

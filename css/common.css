@@ -30,6 +30,19 @@
     --space-x-small: .5rem;
     --space-2x-small: .25rem;
 
+    /* 기본 컬러 */
+    --color-main-bg: #FFF8F2;
+    --color-main: #6E452C;
+    --color-point1: #FF8FA3;
+    --color-point2: #FFD966;
+    --color-point3: #BFDFFF;
+    --color-heart: #FF3F61;
+
+    /* 시멘틱 컬러 */
+    --color-success: #41E694;
+    --color-warning: #F95B6D;
+    --color-notice: #5280FF;
+
     /* 흰색~검정 */
     --gray-0: #FFFFFF;
     --gray-100: #FBFBFB;
@@ -149,48 +162,62 @@ html {
     font-family: 'Pretendard', sans-serif;
     font-weight: var(--fw1);
 }
+
 .common-frame {
     padding: 0 var(--space-2x-large);
 }
+
 .pc {
     display: block;
 }
+
 .pad {
     display: none;
 }
+
 .mo {
     display: none;
 }
+
 @media (max-width: 1024px) {
     html {
         font-size: var(--fs-pad);
     }
+
     .common-frame {
         padding: 0 var(--space-x-large);
     }
+
     .pc {
         display: none;
     }
+
     .pad {
         display: block;
     }
+
     .mo {
         display: none;
     }
 }
+
 @media (max-width: 768px) {
     html {
         font-size: var(--fs-mo);
     }
+
     .common-frame {
         padding: 0 var(--space-normal);
     }
+
     .pc {
         display: none;
     }
+
     .pad {
         display: none;
     }
+
     .mo {
         display: block;
     }
@@ -200,10 +227,177 @@ html {
 
 
 @media (max-width: 860px) {
-.banner-line .common-frame span, 
-.banner-line .common-frame p {
-    display: none;
-} 
+    /* 띠 배너 */
+    .banner-line .common-frame span,
+    .banner-line .common-frame p {
+        display: none;
+    }
 
 }
 
+
+
+
+/* 공통 푸터 스타일 */
+.site-footer {
+    background: var(--gray-900);
+    color: var(--gray-0);
+}
+
+.footer-inner {
+    width: min(1064px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.footer-top {
+    border-bottom: 1px solid var(--gray-800);
+}
+
+.footer-top .footer-inner {
+    min-height: 108px;
+    display: grid;
+    grid-template-columns: 210px 1fr auto;
+    align-items: center;
+    gap: 42px;
+}
+
+.footer-logo,
+.footer-logo img {
+    display: block;
+}
+
+.footer-logo img {
+    width: 156px;
+    height: auto;
+}
+
+.footer-nav ul,
+.footer-social {
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav ul {
+    gap: 34px;
+}
+
+.footer-nav a {
+    font-size: 18px;
+    font-weight: var(--fw2);
+    white-space: nowrap;
+}
+
+.footer-social {
+    gap: 16px;
+}
+
+.footer-social a,
+.footer-social img {
+    display: block;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+
+.footer-bottom .footer-inner {
+    min-height: 278px;
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    gap: 68px;
+    padding: 66px 0 50px;
+    box-sizing: border-box;
+}
+
+.footer-contact p {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: var(--fw2);
+}
+
+.footer-contact strong {
+    color: var(--color-point1);
+    font-size: 31px;
+    line-height: 1;
+    letter-spacing: .5px;
+}
+
+.footer-company {
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+.footer-company p {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-company .company-row+.company-row {
+    margin-top: 14px;
+}
+
+.footer-company .copyright {
+    margin-top: 20px;
+}
+
+.footer-company b {
+    display: inline-block;
+    font-weight: var(--fw2);
+}
+
+@media (max-width:768px) {
+    .footer-top .footer-inner {
+        grid-template-columns: 1fr auto;
+        gap: 24px;
+        padding: 28px 0;
+    }
+
+    .footer-nav {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    .footer-nav ul {
+        flex-wrap: wrap;
+        gap: 12px 24px;
+    }
+
+    .footer-bottom .footer-inner {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 42px 0;
+    }
+}
+
+@media (max-width:520px) {
+    .footer-inner {
+        width: calc(100% - 32px);
+    }
+
+    .footer-logo img {
+        width: 132px;
+    }
+
+    .footer-nav a,
+    .footer-company {
+        font-size: 14px;
+    }
+
+    .footer-contact p {
+        font-size: 15px;
+    }
+
+    .footer-contact strong {
+        font-size: 25px;
+    }
+
+    .footer-company b {
+        min-width: 90px;
+    }
+}

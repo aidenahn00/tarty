@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +13,13 @@
     <script src="./js/index.js" defer></script>
     <script src="./js/product.js" defer></script>
 </head>
+
 <body>
+
     <header class="site-header">
         <div class="header-inner">
-            <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="main-navigation" aria-expanded="false">
+            <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="main-navigation"
+                aria-expanded="false">
                 <img src="./img/icn-menu.svg" alt="">
             </button>
 
@@ -32,13 +36,14 @@
                 <ul>
                     <li class="nav-item is-expanded">
                         <a href="./index.html">Online Shop</a>
-                        <button class="submenu-toggle" type="button" aria-label="Online Shop 하위 메뉴 접기" aria-expanded="true">
+                        <button class="submenu-toggle" type="button" aria-label="Online Shop 하위 메뉴 접기"
+                            aria-expanded="true">
                             <span aria-hidden="true"></span>
                         </button>
                         <ul class="submenu">
-                            <li><a href="./product-list.html">인기상품</a></li>
-                            <li><a href="#">이벤트</a></li>
-                            <li><a href="#">후기</a></li>
+                            <li><a href="./index.html#best-title">인기상품</a></li>
+                            <li><a href="./index.html#event-title">이벤트</a></li>
+                            <li><a href="./index.html#insta-title">후기</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -47,9 +52,9 @@
                             <span aria-hidden="true"></span>
                         </button>
                         <ul class="submenu">
-                            <li><a href="./product-list.html">타르트</a></li>
-                            <li><a href="#">케이크</a></li>
-                            <li><a href="#">음료</a></li>
+                            <li><a href="./product-list.html">미니</a></li>
+                            <li><a href="#">미디움</a></li>
+                            <li><a href="#">빅</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -68,8 +73,7 @@
                             <span aria-hidden="true"></span>
                         </button>
                         <ul class="submenu">
-                            <li><a href="./brand.html">브랜드 소개</a></li>
-                            <li><a href="#">매장 안내</a></li>
+                            <li><a href="./brand.html">스토리</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -117,12 +121,14 @@
                 <button class="icon-btn" type="button" aria-label="장바구니">
                     <img src="./img/icn-bag.svg" alt="">
                 </button>
-                <button class="icon-btn profile-action" type="button" aria-label="회원 메뉴 열기" aria-controls="account-panel" aria-expanded="false">
+                <button class="icon-btn profile-action" type="button" aria-label="회원 메뉴 열기"
+                    aria-controls="account-panel" aria-expanded="false">
                     <img src="./img/icn-profile.svg" alt="">
                 </button>
             </div>
         </div>
     </header>
+
     <main class="product-page">
         <section class="product-view" aria-labelledby="product-title">
             <div class="product-gallery">
@@ -130,19 +136,24 @@
                     <img id="product-main-image" src="./img/buy/tart-detail-pc1.jpg" alt="딸기 바닐라 크림 타르트">
                 </div>
                 <div class="thumbnail-list" aria-label="상품 이미지 선택">
-                    <button class="thumbnail is-active" type="button" data-image="./img/buy/tart-detail-pc1.jpg" aria-label="상품 이미지 1 선택">
+                    <button class="thumbnail is-active" type="button" data-image="./img/buy/tart-detail-pc1.jpg"
+                        aria-label="상품 이미지 1 선택">
                         <img src="./img/buy/tart-detail-pc1.jpg" alt="">
                     </button>
-                    <button class="thumbnail" type="button" data-image="./img/buy/tart-detail-pc2.jpg" aria-label="상품 이미지 2 선택">
+                    <button class="thumbnail" type="button" data-image="./img/buy/tart-detail-pc2.jpg"
+                        aria-label="상품 이미지 2 선택">
                         <img src="./img/buy/tart-detail-pc2.jpg" alt="">
                     </button>
-                    <button class="thumbnail" type="button" data-image="./img/buy/tart-detail-pc3.jpg" aria-label="상품 이미지 3 선택">
+                    <button class="thumbnail" type="button" data-image="./img/buy/tart-detail-pc3.jpg"
+                        aria-label="상품 이미지 3 선택">
                         <img src="./img/buy/tart-detail-pc3.jpg" alt="">
                     </button>
-                    <button class="thumbnail" type="button" data-image="./img/buy/tart-detail-pc4.jpg" aria-label="상품 이미지 4 선택">
+                    <button class="thumbnail" type="button" data-image="./img/buy/tart-detail-pc4.jpg"
+                        aria-label="상품 이미지 4 선택">
                         <img src="./img/buy/tart-detail-pc4.jpg" alt="">
                     </button>
-                    <button class="thumbnail" type="button" data-image="./img/buy/tart-detail-pc5.jpg" aria-label="상품 이미지 5 선택">
+                    <button class="thumbnail" type="button" data-image="./img/buy/tart-detail-pc5.jpg"
+                        aria-label="상품 이미지 5 선택">
                         <img src="./img/buy/tart-detail-pc5.jpg" alt="">
                     </button>
                 </div>
@@ -242,11 +253,13 @@
                 <div class="footer-company">
                     <p><b>TARTY 본사</b> 서울특별시 성동구 성수이로 00, 타르티빌딩 3층</p>
                     <p><b>TARTY 서울숲점</b> 서울특별시 성동구 서울숲길 00, 1층</p>
-                    <p class="company-row">(주)타르티엔티 &nbsp;&nbsp;&nbsp;&nbsp; 사업자번호 123-45-6789 &nbsp;&nbsp;&nbsp;&nbsp; 대표이사 김하경 · 이선영 · 안정현</p>
+                    <p class="company-row">(주)타르티엔티 &nbsp;&nbsp;&nbsp;&nbsp; 사업자번호 123-45-6789 &nbsp;&nbsp;&nbsp;&nbsp;
+                        대표이사 김하경 · 이선영 · 안정현</p>
                     <p class="copyright">Copyright © TARTY. All right Reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
 </body>
+
 </html>

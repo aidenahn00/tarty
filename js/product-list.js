@@ -27,11 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileQuery.addEventListener('change', updateMobileImages);
 
     tabs.forEach((tab) => {
-        tab.addEventListener('click', () => {
-            tabs.forEach((item) => {
+        tab.addEventListener('click', (e) => {
+            tabs.forEach((item, idx) => {
                 const active = item === tab;
                 item.classList.toggle('is-active', active);
                 item.setAttribute('aria-selected', String(active));
+                document.querySelector('.product-grid').style.display = 'none';
             });
 
             let visibleCount = 0;
@@ -43,4 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
             emptyMessage.hidden = visibleCount > 0;
         });
     });
+
+    tabs[0].addEventListener('click', ()=>{
+        document.querySelector('.product-grid').style.display = 'grid';
+    });
+
 });

@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="신선한 과일과 크림으로 완성한 TARTY 타르트 메뉴를 만나보세요.">
     <title>Our Menu | TARTY</title>
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/product-list.css">
     <script src="./js/index.js" defer></script>
     <script src="./js/product-list.js" defer></script>
 </head>
+
 <body>
+
     <header class="site-header">
         <div class="header-inner">
-            <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="main-navigation" aria-expanded="false">
+            <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="main-navigation"
+                aria-expanded="false">
                 <img src="./img/icn-menu.svg" alt="">
             </button>
 
@@ -34,13 +36,14 @@
                 <ul>
                     <li class="nav-item is-expanded">
                         <a href="./index.html">Online Shop</a>
-                        <button class="submenu-toggle" type="button" aria-label="Online Shop 하위 메뉴 접기" aria-expanded="true">
+                        <button class="submenu-toggle" type="button" aria-label="Online Shop 하위 메뉴 접기"
+                            aria-expanded="true">
                             <span aria-hidden="true"></span>
                         </button>
                         <ul class="submenu">
-                            <li><a href="./product-list.html">인기상품</a></li>
-                            <li><a href="#">이벤트</a></li>
-                            <li><a href="#">후기</a></li>
+                            <li><a href="./index.html#best-title">인기상품</a></li>
+                            <li><a href="./index.html#event-title">이벤트</a></li>
+                            <li><a href="./index.html#insta-title">후기</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -49,9 +52,9 @@
                             <span aria-hidden="true"></span>
                         </button>
                         <ul class="submenu">
-                            <li><a href="./product-list.html">타르트</a></li>
-                            <li><a href="#">케이크</a></li>
-                            <li><a href="#">음료</a></li>
+                            <li><a href="./product-list.html">미니</a></li>
+                            <li><a href="#">미디움</a></li>
+                            <li><a href="#">빅</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -70,8 +73,7 @@
                             <span aria-hidden="true"></span>
                         </button>
                         <ul class="submenu">
-                            <li><a href="./brand.html">브랜드 소개</a></li>
-                            <li><a href="#">매장 안내</a></li>
+                            <li><a href="./brand.html">스토리</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -119,7 +121,8 @@
                 <button class="icon-btn" type="button" aria-label="장바구니">
                     <img src="./img/icn-bag.svg" alt="">
                 </button>
-                <button class="icon-btn profile-action" type="button" aria-label="회원 메뉴 열기" aria-controls="account-panel" aria-expanded="false">
+                <button class="icon-btn profile-action" type="button" aria-label="회원 메뉴 열기"
+                    aria-controls="account-panel" aria-expanded="false">
                     <img src="./img/icn-profile.svg" alt="">
                 </button>
             </div>
@@ -128,35 +131,170 @@
 
     <main class="menu-page">
         <section class="menu-hero" aria-labelledby="menu-title">
-            <picture><source media="(max-width: 768px)" srcset="./img/event/banner-event-mo.jpg"><source media="(max-width: 1024px)" srcset="./img/productlist/banner-product-pad.jpg"><img src="./img/productlist/banner-product-pc.jpg" alt="여러 종류의 신선한 타르트"></picture>
+            <picture>
+                <source media="(max-width: 768px)" srcset="./img/event/banner-event-mo.jpg">
+                <source media="(max-width: 1024px)" srcset="./img/productlist/banner-product-pad.jpg"><img
+                    src="./img/productlist/banner-product-pc.jpg" alt="여러 종류의 신선한 타르트">
+            </picture>
         </section>
 
         <section class="menu-catalog" aria-label="타르트 메뉴 목록">
-            <div class="size-tabs" role="tablist" aria-label="타르트 크기"><button class="is-active" type="button" role="tab" aria-selected="true" data-size="mini">미니</button><button type="button" role="tab" aria-selected="false" data-size="medium">미디움</button><button type="button" role="tab" aria-selected="false" data-size="big">빅</button></div>
+            <div class="size-tabs" role="tablist" aria-label="타르트 크기"><button class="is-active" type="button" role="tab"
+                    aria-selected="true" data-size="mini">미니</button><button type="button" role="tab"
+                    aria-selected="false" data-size="medium">미디움</button><button type="button" role="tab"
+                    aria-selected="false" data-size="big">빅</button></div>
             <div class="product-grid" aria-live="polite">
-                <a class="menu-card" href="./product.html" data-size="mini"><span class="menu-badge best">BEST</span><img src="./img/productlist/tart1.png" data-pad-src="./img/productlist/tart1-1.png" alt="딸기 바닐라 크림 타르트"><div class="card-copy"><h3>딸기 바닐라 크림 타르트</h3><p>Strawberry Vanilla Cream Tart</p></div></a>
-                <a class="menu-card" href="./product.html" data-size="mini"><span class="menu-badge best">BEST</span><img src="./img/productlist/tart2.png" data-pad-src="./img/productlist/tart2-1.png" alt="블루베리 요거트 타르트"><div class="card-copy"><h3>블루베리 요거트 타르트</h3><p>Blueberry Yogurt Tart</p></div></a>
-                <a class="menu-card" href="./product.html" data-size="mini"><span class="menu-badge best">BEST</span><img src="./img/productlist/tart3.png" data-pad-src="./img/productlist/tart3-1.png" alt="애플 시나몬 타르트"><div class="card-copy"><h3>애플 시나몬 타르트</h3><p>Apple Cinnamon Tart</p></div></a>
-                <a class="menu-card" href="./product.html" data-size="mini"><span class="menu-badge new">NEW</span><img src="./img/productlist/tart4.png" data-pad-src="./img/productlist/tart4-1.png" alt="망고 패션후르츠 타르트"><div class="card-copy"><h3>망고 패션후르츠 타르트</h3><p>Mango Passion Fruit Tart</p></div></a>
-                <a class="menu-card" href="./product.html" data-size="mini"><span class="menu-badge new">NEW</span><img src="./img/productlist/tart5.png" data-pad-src="./img/productlist/tart5-1.png" alt="청포도 마스카포네 타르트"><div class="card-copy"><h3>청포도 마스카포네 타르트</h3><p>Green Grape Mascarpone Tart</p></div></a>
-                <a class="menu-card" href="./product.html" data-size="mini"><span class="menu-badge seasonal">시즌한정</span><img src="./img/productlist/tart6.png" data-pad-src="./img/productlist/tart6-1.png" alt="무화과 허니 타르트"><div class="card-copy"><h3>무화과 허니 타르트</h3><p>Fig &amp; Honey Tart</p></div></a>
-                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart7.png" data-pad-src="./img/productlist/tart7-1.png" alt="복숭아 얼그레이 타르트"><div class="card-copy"><h3>복숭아 얼그레이 타르트</h3><p>Peach Earl Grey Tart</p></div></a>
-                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart8.png" data-pad-src="./img/productlist/tart8-1.png" alt="레몬 머랭 타르트"><div class="card-copy"><h3>레몬 머랭 타르트</h3><p>Lemon Meringue Tart</p></div></a>
-                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart9.png" data-pad-src="./img/productlist/tart9-1.png" alt="라즈베리 피스타치오 타르트"><div class="card-copy"><h3>라즈베리 피스타치오 타르트</h3><p>Raspberry Pistachio Tart</p></div></a>
-                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart10.png" data-pad-src="./img/productlist/tart10-1.png" alt="체리 아몬드 타르트"><div class="card-copy"><h3>체리 아몬드 타르트</h3><p>Cherry Almond Tart</p></div></a>
-                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart11.png" data-pad-src="./img/productlist/tart11-1.png" alt="골드키위 라임 타르트"><div class="card-copy"><h3>골드키위 라임 타르트</h3><p>Gold Kiwi Lime Tart</p></div></a>
-                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart12.png" data-pad-src="./img/productlist/tart12-1.png" alt="파인애플 코코넛 타르트"><div class="card-copy"><h3>파인애플 코코넛 타르트</h3><p>Pineapple Coconut Tart</p></div></a>
-                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart13.png" data-pad-src="./img/productlist/tart13-1.png" alt="다크초콜릿 가나슈 타르트"><div class="card-copy"><h3>다크초콜릿 가나슈 타르트</h3><p>Dark Chocolate Ganache Tart</p></div></a>
-                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart14.png" data-pad-src="./img/productlist/tart14-1.png" alt="클래식 에그 타르트"><div class="card-copy"><h3>클래식 에그 타르트</h3><p>Classic Egg Tart</p></div></a>
-                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart15.png" data-pad-src="./img/productlist/tart15-1.png" alt="바스크 치즈 타르트"><div class="card-copy"><h3>바스크 치즈 타르트</h3><p>Basque Cheese Tart</p></div></a>
+                <a class="menu-card" href="./product.html" data-size="mini"><span
+                        class="menu-badge best">BEST</span><img src="./img/productlist/tart1.png"
+                        data-pad-src="./img/productlist/tart1-1.png" alt="딸기 바닐라 크림 타르트">
+                    <div class="card-copy">
+                        <h3>딸기 바닐라 크림 타르트</h3>
+                        <p>Strawberry Vanilla Cream Tart</p>
+                    </div>
+                </a>
+                <a class="menu-card" href="./product.html" data-size="mini"><span
+                        class="menu-badge best">BEST</span><img src="./img/productlist/tart2.png"
+                        data-pad-src="./img/productlist/tart2-1.png" alt="블루베리 요거트 타르트">
+                    <div class="card-copy">
+                        <h3>블루베리 요거트 타르트</h3>
+                        <p>Blueberry Yogurt Tart</p>
+                    </div>
+                </a>
+                <a class="menu-card" href="./product.html" data-size="mini"><span
+                        class="menu-badge best">BEST</span><img src="./img/productlist/tart3.png"
+                        data-pad-src="./img/productlist/tart3-1.png" alt="애플 시나몬 타르트">
+                    <div class="card-copy">
+                        <h3>애플 시나몬 타르트</h3>
+                        <p>Apple Cinnamon Tart</p>
+                    </div>
+                </a>
+                <a class="menu-card" href="./product.html" data-size="mini"><span class="menu-badge new">NEW</span><img
+                        src="./img/productlist/tart4.png" data-pad-src="./img/productlist/tart4-1.png"
+                        alt="망고 패션후르츠 타르트">
+                    <div class="card-copy">
+                        <h3>망고 패션후르츠 타르트</h3>
+                        <p>Mango Passion Fruit Tart</p>
+                    </div>
+                </a>
+                <a class="menu-card" href="./product.html" data-size="mini"><span class="menu-badge new">NEW</span><img
+                        src="./img/productlist/tart5.png" data-pad-src="./img/productlist/tart5-1.png"
+                        alt="청포도 마스카포네 타르트">
+                    <div class="card-copy">
+                        <h3>청포도 마스카포네 타르트</h3>
+                        <p>Green Grape Mascarpone Tart</p>
+                    </div>
+                </a>
+                <a class="menu-card" href="./product.html" data-size="mini"><span
+                        class="menu-badge seasonal">시즌한정</span><img src="./img/productlist/tart6.png"
+                        data-pad-src="./img/productlist/tart6-1.png" alt="무화과 허니 타르트">
+                    <div class="card-copy">
+                        <h3>무화과 허니 타르트</h3>
+                        <p>Fig &amp; Honey Tart</p>
+                    </div>
+                </a>
+                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart7.png"
+                        data-pad-src="./img/productlist/tart7-1.png" alt="복숭아 얼그레이 타르트">
+                    <div class="card-copy">
+                        <h3>복숭아 얼그레이 타르트</h3>
+                        <p>Peach Earl Grey Tart</p>
+                    </div>
+                </a>
+                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart8.png"
+                        data-pad-src="./img/productlist/tart8-1.png" alt="레몬 머랭 타르트">
+                    <div class="card-copy">
+                        <h3>레몬 머랭 타르트</h3>
+                        <p>Lemon Meringue Tart</p>
+                    </div>
+                </a>
+                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart9.png"
+                        data-pad-src="./img/productlist/tart9-1.png" alt="라즈베리 피스타치오 타르트">
+                    <div class="card-copy">
+                        <h3>라즈베리 피스타치오 타르트</h3>
+                        <p>Raspberry Pistachio Tart</p>
+                    </div>
+                </a>
+                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart10.png"
+                        data-pad-src="./img/productlist/tart10-1.png" alt="체리 아몬드 타르트">
+                    <div class="card-copy">
+                        <h3>체리 아몬드 타르트</h3>
+                        <p>Cherry Almond Tart</p>
+                    </div>
+                </a>
+                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart11.png"
+                        data-pad-src="./img/productlist/tart11-1.png" alt="골드키위 라임 타르트">
+                    <div class="card-copy">
+                        <h3>골드키위 라임 타르트</h3>
+                        <p>Gold Kiwi Lime Tart</p>
+                    </div>
+                </a>
+                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart12.png"
+                        data-pad-src="./img/productlist/tart12-1.png" alt="파인애플 코코넛 타르트">
+                    <div class="card-copy">
+                        <h3>파인애플 코코넛 타르트</h3>
+                        <p>Pineapple Coconut Tart</p>
+                    </div>
+                </a>
+                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart13.png"
+                        data-pad-src="./img/productlist/tart13-1.png" alt="다크초콜릿 가나슈 타르트">
+                    <div class="card-copy">
+                        <h3>다크초콜릿 가나슈 타르트</h3>
+                        <p>Dark Chocolate Ganache Tart</p>
+                    </div>
+                </a>
+                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart14.png"
+                        data-pad-src="./img/productlist/tart14-1.png" alt="클래식 에그 타르트">
+                    <div class="card-copy">
+                        <h3>클래식 에그 타르트</h3>
+                        <p>Classic Egg Tart</p>
+                    </div>
+                </a>
+                <a class="menu-card" href="./product.html" data-size="mini"><img src="./img/productlist/tart15.png"
+                        data-pad-src="./img/productlist/tart15-1.png" alt="바스크 치즈 타르트">
+                    <div class="card-copy">
+                        <h3>바스크 치즈 타르트</h3>
+                        <p>Basque Cheese Tart</p>
+                    </div>
+                </a>
             </div>
             <p class="empty-message" hidden>해당 사이즈의 상품을 준비 중입니다.</p>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="footer-top"><div class="footer-inner"><a href="./index.html" class="footer-logo" aria-label="TARTY 홈"><img src="./img/logo-footer.svg" alt="TARTY"></a><nav class="footer-nav" aria-label="푸터 메뉴"><ul><li><a href="#">회사소개</a></li><li><a href="#">가맹절차</a></li><li><a href="#">사이트이용약관</a></li><li><a href="#">개인정보 처리방침</a></li><li><a href="#">고객상담</a></li></ul></nav><div class="footer-social" aria-label="소셜 미디어"><a href="#" aria-label="인스타그램"><img src="./img/icn-insta.svg" alt=""></a><a href="#" aria-label="유튜브"><img src="./img/icn-youtube.svg" alt=""></a><a href="#" aria-label="페이스북"><img src="./img/icn-facebook.svg" alt=""></a></div></div></div>
-        <div class="footer-bottom"><div class="footer-inner"><div class="footer-contact"><p><span>가맹문의</span><strong>1661-1234</strong></p><p><span>고객센터</span><strong>1644-4321</strong></p></div><div class="footer-company"><p><b>TARTY 본사</b> 서울특별시 성동구 성수이로 00, 타르티빌딩 3층</p><p><b>TARTY 서울숲점</b> 서울특별시 성동구 서울숲길 00, 1층</p><p class="company-row">(주)타르티엔티 &nbsp;&nbsp;&nbsp;&nbsp; 사업자번호 123-45-6789 &nbsp;&nbsp;&nbsp;&nbsp; 대표이사 김하경 · 이선영 · 안정현</p><p class="copyright">Copyright © TARTY. All right Reserved.</p></div></div></div>
+        <div class="footer-top">
+            <div class="footer-inner"><a href="./index.html" class="footer-logo" aria-label="TARTY 홈"><img
+                        src="./img/logo-footer.svg" alt="TARTY"></a>
+                <nav class="footer-nav" aria-label="푸터 메뉴">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">가맹절차</a></li>
+                        <li><a href="#">사이트이용약관</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">고객상담</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-social" aria-label="소셜 미디어"><a href="#" aria-label="인스타그램"><img
+                            src="./img/icn-insta.svg" alt=""></a><a href="#" aria-label="유튜브"><img
+                            src="./img/icn-youtube.svg" alt=""></a><a href="#" aria-label="페이스북"><img
+                            src="./img/icn-facebook.svg" alt=""></a></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-inner">
+                <div class="footer-contact">
+                    <p><span>가맹문의</span><strong>1661-1234</strong></p>
+                    <p><span>고객센터</span><strong>1644-4321</strong></p>
+                </div>
+                <div class="footer-company">
+                    <p><b>TARTY 본사</b> 서울특별시 성동구 성수이로 00, 타르티빌딩 3층</p>
+                    <p><b>TARTY 서울숲점</b> 서울특별시 성동구 서울숲길 00, 1층</p>
+                    <p class="company-row">(주)타르티엔티 &nbsp;&nbsp;&nbsp;&nbsp; 사업자번호 123-45-6789 &nbsp;&nbsp;&nbsp;&nbsp;
+                        대표이사 김하경 · 이선영 · 안정현</p>
+                    <p class="copyright">Copyright © TARTY. All right Reserved.</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
+
 </html>

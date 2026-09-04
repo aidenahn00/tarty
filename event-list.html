@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TARTY에서 진행 중인 달콤한 이벤트와 혜택을 만나보세요.">
     <title>Event | TARTY</title>
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/event-list.css">
     <script src="./js/index.js" defer></script>
     <script src="./js/event-list.js" defer></script>
 </head>
+
 <body>
+
     <header class="site-header">
         <div class="header-inner">
-            <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="main-navigation" aria-expanded="false">
+            <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="main-navigation"
+                aria-expanded="false">
                 <img src="./img/icn-menu.svg" alt="">
             </button>
 
@@ -34,13 +36,14 @@
                 <ul>
                     <li class="nav-item is-expanded">
                         <a href="./index.html">Online Shop</a>
-                        <button class="submenu-toggle" type="button" aria-label="Online Shop 하위 메뉴 접기" aria-expanded="true">
+                        <button class="submenu-toggle" type="button" aria-label="Online Shop 하위 메뉴 접기"
+                            aria-expanded="true">
                             <span aria-hidden="true"></span>
                         </button>
                         <ul class="submenu">
-                            <li><a href="./product-list.html">인기상품</a></li>
-                            <li><a href="#">이벤트</a></li>
-                            <li><a href="#">후기</a></li>
+                            <li><a href="./index.html#best-title">인기상품</a></li>
+                            <li><a href="./index.html#event-title">이벤트</a></li>
+                            <li><a href="./index.html#insta-title">후기</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -49,9 +52,9 @@
                             <span aria-hidden="true"></span>
                         </button>
                         <ul class="submenu">
-                            <li><a href="./product-list.html">타르트</a></li>
-                            <li><a href="#">케이크</a></li>
-                            <li><a href="#">음료</a></li>
+                            <li><a href="./product-list.html">미니</a></li>
+                            <li><a href="#">미디움</a></li>
+                            <li><a href="#">빅</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -70,8 +73,7 @@
                             <span aria-hidden="true"></span>
                         </button>
                         <ul class="submenu">
-                            <li><a href="./brand.html">브랜드 소개</a></li>
-                            <li><a href="#">매장 안내</a></li>
+                            <li><a href="./brand.html">스토리</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -119,7 +121,8 @@
                 <button class="icon-btn" type="button" aria-label="장바구니">
                     <img src="./img/icn-bag.svg" alt="">
                 </button>
-                <button class="icon-btn profile-action" type="button" aria-label="회원 메뉴 열기" aria-controls="account-panel" aria-expanded="false">
+                <button class="icon-btn profile-action" type="button" aria-label="회원 메뉴 열기"
+                    aria-controls="account-panel" aria-expanded="false">
                     <img src="./img/icn-profile.svg" alt="">
                 </button>
             </div>
@@ -127,27 +130,116 @@
     </header>
 
     <main class="event-page">
-        <section class="event-hero" aria-label="TARTY 딸기 축제"><picture><source media="(max-width: 768px)" srcset="./img/event/banner-event-mo.jpg"><source media="(max-width: 1024px)" srcset="./img/event/banner-event-pad.jpg"><img src="./img/event/banner-event-pc.jpg" alt="TARTY Event Strawberry Festa, 딸기가 가장 달콤한 계절"></picture></section>
+        <section class="event-hero" aria-label="TARTY 딸기 축제">
+            <picture>
+                <source media="(max-width: 768px)" srcset="./img/event/banner-event-mo.jpg">
+                <source media="(max-width: 1024px)" srcset="./img/event/banner-event-pad.jpg"><img
+                    src="./img/event/banner-event-pc.jpg" alt="TARTY Event Strawberry Festa, 딸기가 가장 달콤한 계절">
+            </picture>
+        </section>
         <section class="event-catalog" aria-label="이벤트 목록">
-            <div class="event-tabs" role="tablist" aria-label="이벤트 상태"><button class="is-active" type="button" role="tab" aria-selected="true" data-status="active">진행 중</button><button type="button" role="tab" aria-selected="false" data-status="ended">종료</button></div>
+            <div class="event-tabs" role="tablist" aria-label="이벤트 상태"><button class="is-active" type="button"
+                    role="tab" aria-selected="true" data-status="active">진행 중</button><button type="button" role="tab"
+                    aria-selected="false" data-status="ended">종료</button></div>
             <div class="event-grid-list">
-                <a class="event-card" href="#" data-status="active"><img src="./img/event/event1.jpg" data-pad-src="./img/event/event1-1.jpg" data-mo-src="./img/event/event1-2.jpg" alt="첫 만남은 더 달콤하게 신규 회원 혜택"><div class="event-card-info"><span class="event-tag pink">회원혜택</span><h2>첫 만남은 더 달콤하게</h2></div></a>
-                <a class="event-card" href="#" data-status="active"><img src="./img/event/event2.jpg" data-pad-src="./img/event/event2-1.jpg" data-mo-src="./img/event/event2-2.jpg" alt="골라 담는 타르티 박스 할인"><div class="event-card-info"><span class="event-tag blue">골라담기</span><h2>골라 담는 타르티 박스</h2></div></a>
-                <a class="event-card" href="#" data-status="active"><img src="./img/event/event3.jpg" data-pad-src="./img/event/event3-1.jpg" data-mo-src="./img/event/event3-2.jpg" alt="이달의 과일 타르트"><div class="event-card-info"><span class="event-tag yellow">시즌한정</span><h2>이달의 과일 타르트</h2></div></a>
-                <a class="event-card" href="#" data-status="active"><img src="./img/event/event4.jpg" data-pad-src="./img/event/event4-1.jpg" data-mo-src="./img/event/event4-2.jpg" alt="매월 7일 타르티 데이"><div class="event-card-info"><span class="event-tag yellow">매월 7일</span><h2>매월 7일 타르티 데이</h2></div></a>
-                <a class="event-card" href="#" data-status="active"><img src="./img/event/event5.jpg" data-pad-src="./img/event/event5-1.jpg" data-mo-src="./img/event/event5-2.jpg" alt="나의 타르티 모먼트 포토리뷰"><div class="event-card-info"><span class="event-tag blue">포토리뷰</span><h2>나의 타르티 모먼트</h2></div></a>
-                <a class="event-card" href="#" data-status="active"><img src="./img/event/event6.jpg" data-pad-src="./img/event/event6-1.jpg" data-mo-src="./img/event/event6-2.jpg" alt="달콤한 생일 선물"><div class="event-card-info"><span class="event-tag pink">생일혜택</span><h2>달콤한 생일 선물</h2></div></a>
-                <a class="event-card" href="#" data-status="active"><img src="./img/event/event7.jpg" data-pad-src="./img/event/event7-1.jpg" data-mo-src="./img/event/event7-2.jpg" alt="다음 타르트 투표"><div class="event-card-info"><span class="event-tag blue">고객참여</span><h2>다음 타르트 투표</h2></div></a>
-                <a class="event-card" href="#" data-status="active"><img src="./img/event/event8.jpg" data-pad-src="./img/event/event8-1.jpg" data-mo-src="./img/event/event8-2.jpg" alt="타르티 기프트 위크"><div class="event-card-info"><span class="event-tag pink">기간한정</span><h2>타르티 기프트 위크</h2></div></a>
-                <a class="event-card" href="#" data-status="active"><img src="./img/event/event9.jpg" data-pad-src="./img/event/event9-1.jpg" data-mo-src="./img/event/event9-2.jpg" alt="타르티 스탬프"><div class="event-card-info"><span class="event-tag yellow">재구매 혜택</span><h2>타르티 스탬프</h2></div></a>
+                <a class="event-card" href="#" data-status="active"><img src="./img/event/event1.jpg"
+                        data-pad-src="./img/event/event1-1.jpg" data-mo-src="./img/event/event1-2.jpg"
+                        alt="첫 만남은 더 달콤하게 신규 회원 혜택">
+                    <div class="event-card-info"><span class="event-tag pink">회원혜택</span>
+                        <h2>첫 만남은 더 달콤하게</h2>
+                    </div>
+                </a>
+                <a class="event-card" href="#" data-status="active"><img src="./img/event/event2.jpg"
+                        data-pad-src="./img/event/event2-1.jpg" data-mo-src="./img/event/event2-2.jpg"
+                        alt="골라 담는 타르티 박스 할인">
+                    <div class="event-card-info"><span class="event-tag blue">골라담기</span>
+                        <h2>골라 담는 타르티 박스</h2>
+                    </div>
+                </a>
+                <a class="event-card" href="#" data-status="active"><img src="./img/event/event3.jpg"
+                        data-pad-src="./img/event/event3-1.jpg" data-mo-src="./img/event/event3-2.jpg" alt="이달의 과일 타르트">
+                    <div class="event-card-info"><span class="event-tag yellow">시즌한정</span>
+                        <h2>이달의 과일 타르트</h2>
+                    </div>
+                </a>
+                <a class="event-card" href="#" data-status="active"><img src="./img/event/event4.jpg"
+                        data-pad-src="./img/event/event4-1.jpg" data-mo-src="./img/event/event4-2.jpg"
+                        alt="매월 7일 타르티 데이">
+                    <div class="event-card-info"><span class="event-tag yellow">매월 7일</span>
+                        <h2>매월 7일 타르티 데이</h2>
+                    </div>
+                </a>
+                <a class="event-card" href="#" data-status="active"><img src="./img/event/event5.jpg"
+                        data-pad-src="./img/event/event5-1.jpg" data-mo-src="./img/event/event5-2.jpg"
+                        alt="나의 타르티 모먼트 포토리뷰">
+                    <div class="event-card-info"><span class="event-tag blue">포토리뷰</span>
+                        <h2>나의 타르티 모먼트</h2>
+                    </div>
+                </a>
+                <a class="event-card" href="#" data-status="active"><img src="./img/event/event6.jpg"
+                        data-pad-src="./img/event/event6-1.jpg" data-mo-src="./img/event/event6-2.jpg" alt="달콤한 생일 선물">
+                    <div class="event-card-info"><span class="event-tag pink">생일혜택</span>
+                        <h2>달콤한 생일 선물</h2>
+                    </div>
+                </a>
+                <a class="event-card" href="#" data-status="active"><img src="./img/event/event7.jpg"
+                        data-pad-src="./img/event/event7-1.jpg" data-mo-src="./img/event/event7-2.jpg" alt="다음 타르트 투표">
+                    <div class="event-card-info"><span class="event-tag blue">고객참여</span>
+                        <h2>다음 타르트 투표</h2>
+                    </div>
+                </a>
+                <a class="event-card" href="#" data-status="active"><img src="./img/event/event8.jpg"
+                        data-pad-src="./img/event/event8-1.jpg" data-mo-src="./img/event/event8-2.jpg" alt="타르티 기프트 위크">
+                    <div class="event-card-info"><span class="event-tag pink">기간한정</span>
+                        <h2>타르티 기프트 위크</h2>
+                    </div>
+                </a>
+                <a class="event-card" href="#" data-status="active"><img src="./img/event/event9.jpg"
+                        data-pad-src="./img/event/event9-1.jpg" data-mo-src="./img/event/event9-2.jpg" alt="타르티 스탬프">
+                    <div class="event-card-info"><span class="event-tag yellow">재구매 혜택</span>
+                        <h2>타르티 스탬프</h2>
+                    </div>
+                </a>
             </div>
             <p class="event-empty" id="ended-events" hidden>종료된 이벤트가 없습니다.</p>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="footer-top"><div class="footer-inner"><a href="./index.html" class="footer-logo" aria-label="TARTY 홈"><img src="./img/logo-footer.svg" alt="TARTY"></a><nav class="footer-nav" aria-label="푸터 메뉴"><ul><li><a href="#">회사소개</a></li><li><a href="#">가맹절차</a></li><li><a href="#">사이트이용약관</a></li><li><a href="#">개인정보 처리방침</a></li><li><a href="#">고객상담</a></li></ul></nav><div class="footer-social" aria-label="소셜 미디어"><a href="#" aria-label="인스타그램"><img src="./img/icn-insta.svg" alt=""></a><a href="#" aria-label="유튜브"><img src="./img/icn-youtube.svg" alt=""></a><a href="#" aria-label="페이스북"><img src="./img/icn-facebook.svg" alt=""></a></div></div></div>
-        <div class="footer-bottom"><div class="footer-inner"><div class="footer-contact"><p><span>가맹문의</span><strong>1661-1234</strong></p><p><span>고객센터</span><strong>1644-4321</strong></p></div><div class="footer-company"><p><b>TARTY 본사</b> 서울특별시 성동구 성수이로 00, 타르티빌딩 3층</p><p><b>TARTY 서울숲점</b> 서울특별시 성동구 서울숲길 00, 1층</p><p class="company-row">(주)타르티엔티 &nbsp;&nbsp;&nbsp;&nbsp; 사업자번호 123-45-6789 &nbsp;&nbsp;&nbsp;&nbsp; 대표이사 김하경 · 이선영 · 안정현</p><p class="copyright">Copyright © TARTY. All right Reserved.</p></div></div></div>
+        <div class="footer-top">
+            <div class="footer-inner"><a href="./index.html" class="footer-logo" aria-label="TARTY 홈"><img
+                        src="./img/logo-footer.svg" alt="TARTY"></a>
+                <nav class="footer-nav" aria-label="푸터 메뉴">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">가맹절차</a></li>
+                        <li><a href="#">사이트이용약관</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">고객상담</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-social" aria-label="소셜 미디어"><a href="#" aria-label="인스타그램"><img
+                            src="./img/icn-insta.svg" alt=""></a><a href="#" aria-label="유튜브"><img
+                            src="./img/icn-youtube.svg" alt=""></a><a href="#" aria-label="페이스북"><img
+                            src="./img/icn-facebook.svg" alt=""></a></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-inner">
+                <div class="footer-contact">
+                    <p><span>가맹문의</span><strong>1661-1234</strong></p>
+                    <p><span>고객센터</span><strong>1644-4321</strong></p>
+                </div>
+                <div class="footer-company">
+                    <p><b>TARTY 본사</b> 서울특별시 성동구 성수이로 00, 타르티빌딩 3층</p>
+                    <p><b>TARTY 서울숲점</b> 서울특별시 성동구 서울숲길 00, 1층</p>
+                    <p class="company-row">(주)타르티엔티 &nbsp;&nbsp;&nbsp;&nbsp; 사업자번호 123-45-6789 &nbsp;&nbsp;&nbsp;&nbsp;
+                        대표이사 김하경 · 이선영 · 안정현</p>
+                    <p class="copyright">Copyright © TARTY. All right Reserved.</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
+
 </html>
