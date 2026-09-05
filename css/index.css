@@ -296,6 +296,8 @@
         grid-template-columns: 230px 1fr auto;
         align-items: center;
         gap: 0;
+
+        max-width: 1280px;
     }
 
     .benefit-bar strong {
@@ -394,6 +396,18 @@
         margin-top: 7px;
         color: var(--gray-600);
         font-size: 0.6875rem;
+    }
+
+    .middle-banner {
+        background-color: var(--main-background-color-0);       
+    }
+    .middle-banner img {
+        margin: 0 auto;
+        max-width: 1920px;
+    }
+    .stamp-banner img {
+        margin: 0 auto;
+        max-width: 1920px;
     }
 
     .middle-banner,
