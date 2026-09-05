@@ -8,8 +8,6 @@
 
   /* 웹킷 마음대로 폰트 크기 조절 막음 */
   -webkit-text-size-adjust: none;
-  /* 웹킷 마음대로 눌림 하이라이트 막음 */
-  -webkit-tap-highlight-color: transparent;
 }
 h1,
 h2,

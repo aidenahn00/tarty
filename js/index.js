@@ -115,3 +115,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+const header = document.querySelector('.site-header');
+const mainMenu = document.querySelectorAll('.main-nav>ul>li');
+
+mainMenu.forEach(el=>{
+    el.addEventListener('mouseenter', ()=>{
+        header.style.borderBottom = '1px solid #fff';
+    });
+    el.addEventListener('mouseleave', ()=>{
+        header.style.borderBottom = '1px solid var(--gray-300)';
+    });
+});
