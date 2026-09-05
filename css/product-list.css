@@ -262,10 +262,6 @@ body {
         row-gap: 84px;
     }
 
-    .menu-card:first-child {
-        display: none;
-    }
-
     .menu-badge {
         top: -17px;
         padding: 5px 8px;
