@@ -7,7 +7,7 @@
 
     /* 행간 */
     --lh1: 1.2;
-    --lh2: 1.45;
+    --lh2: 1.4;
 
     /* 태그 글씨 크기 */
     --fs-h1: 2.4414rem;
@@ -237,7 +237,105 @@ html {
 
 
 
+/* 공통 링크 배너 스타일 */
+.benefit-bar {
+    background: #fdeff2;
+    font-size: var(--fs-body1);
+    color: var(--color-main);
+    border-top: 1px solid rgba(0, 0, 0, 0.03);
 
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background: var(--color-pink-0);
+    color: var(--color-main);
+    box-sizing: border-box;
+}
+
+.benefit-bar .content-frame {
+    display: grid;
+    grid-template-columns: 230px 1fr auto;
+    align-items: center;
+    gap: 0;
+
+    max-width: 1280px;
+}
+
+.benefit-bar strong {
+    font-size: var(--fs-h4);
+    font-weight: var(--fw2);
+}
+
+.benefit-bar span {
+    color: var(--color-main);
+}
+
+.benefit-bar a {
+    padding: 3px 14px;
+    border: 1px solid var(--color-main);
+    border-radius: 999px;
+    font-weight: var(--fw2);
+}
+
+@media (max-width: 1024px) {
+    .benefit-bar {
+        height: 60px;
+    }
+
+    .benefit-bar .content-frame {
+        grid-template-columns: 200px 1fr auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefit-bar {
+        height: auto;
+    }
+
+    .benefit-bar .content-frame {
+        grid-template-columns: 1fr auto;
+        gap: 5px 16px;
+    }
+
+    .benefit-bar span {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    .benefit-bar a {
+        grid-column: 2;
+        grid-row: 1;
+    }    
+    .benefit-bar {
+        height: 52px;
+        padding: 0;
+    }
+
+    .benefit-bar .content-frame {
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+    }
+
+    .benefit-bar strong {
+        display: none;
+    }
+
+    .benefit-bar span {
+        grid-column: 1;
+        grid-row: 1;
+        max-width: 220px;
+        line-height: var(--lh2);
+    }
+
+    .benefit-bar a {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}
+
+
+
+    
 /* 공통 푸터 스타일 */
 .site-footer {
     background: var(--gray-900);
@@ -286,7 +384,7 @@ html {
 }
 
 .footer-nav a {
-    font-size: 18px;
+    font-size: var(--fs-h4);
     font-weight: var(--fw2);
     white-space: nowrap;
 }
@@ -320,20 +418,27 @@ html {
     align-items: baseline;
     gap: 10px;
     margin: 0 0 8px;
-    font-size: 18px;
+    font-size: var(--fs-h4);
     font-weight: var(--fw2);
 }
 
 .footer-contact strong {
     color: var(--color-point1);
-    font-size: 31px;
-    line-height: 1;
+    font-size: var(--fs-h2);
     letter-spacing: .5px;
 }
 
 .footer-company {
-    font-size: 18px;
-    line-height: 1.55;
+    font-size: var(--fs-h4);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer-company>address {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .footer-company p {
@@ -345,20 +450,19 @@ html {
     margin-top: 14px;
 }
 
-.footer-company .copyright {
-    margin-top: 20px;
-}
-
 .footer-company b {
     display: inline-block;
     font-weight: var(--fw2);
 }
 
-@media (max-width:768px) {
+@media (max-width:1024px) {
     .footer-top .footer-inner {
-        grid-template-columns: 1fr auto;
-        gap: 24px;
-        padding: 28px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 4rem 0;
     }
 
     .footer-nav {
@@ -368,14 +472,25 @@ html {
 
     .footer-nav ul {
         flex-wrap: wrap;
-        gap: 12px 24px;
+        gap: 2rem;
     }
 
     .footer-bottom .footer-inner {
         min-height: auto;
         grid-template-columns: 1fr;
-        gap: 32px;
-        padding: 42px 0;
+        gap: 2rem;
+        padding: 4rem 0;
+    }
+}
+
+@media (max-width:768px) {
+    .footer-nav {
+        width: 100%;
+    }
+    .footer-nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(50px, 1fr));
+        gap: 24px 12px;
     }
 }
 
@@ -386,19 +501,6 @@ html {
 
     .footer-logo img {
         width: 132px;
-    }
-
-    .footer-nav a,
-    .footer-company {
-        font-size: 14px;
-    }
-
-    .footer-contact p {
-        font-size: 15px;
-    }
-
-    .footer-contact strong {
-        font-size: 25px;
     }
 
     .footer-company b {

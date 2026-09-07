@@ -30,6 +30,9 @@ img {
 table {
     border-collapse: collapse;
 }
+address {
+    font-style: normal;
+}
 a {
     color: inherit;
     text-decoration: inherit;

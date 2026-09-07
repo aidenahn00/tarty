@@ -52,7 +52,7 @@ body {
     border-radius: 999px;
     background: transparent;
     color: var(--gray-500);
-    font-size: 1.125rem;
+    font-size: var(--fs-h4);
     cursor: pointer;
     transition: .2s ease;
 }
@@ -99,7 +99,7 @@ body {
 .event-card-info h2 {
     min-width: 0;
     overflow: hidden;
-    font-size: 1.14rem;
+    font-size: var(--fs-body2);
     font-weight: var(--fw1);
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -111,7 +111,7 @@ body {
     border-radius: 999px;
     color: #fff;
     font-size: var(--fs-detail);
-    line-height: 1;
+    line-height: var(--lh2);
     font-weight: var(--fw2);
 }
 
@@ -130,7 +130,7 @@ body {
 .event-empty {
     padding: 100px 0;
     color: var(--gray-600);
-    font-size: 1.125rem;
+    font-size: var(--fs-body2);
     text-align: center;
 }
 

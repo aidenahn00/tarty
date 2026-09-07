@@ -1,4 +1,3 @@
-    /* Inline styles for main content (hero, best menu, events, instagram, footer) */
     .hero {
         background: #f8efe6;
         display: flex;
@@ -10,30 +9,11 @@
 
     .hero .hero-content {
         max-width: 680px;
-        padding-left: 40px;
-    }
-
-    .hero h2 {
-        color: var(--color-main);
-        font-size: var(--fs-h2);
-        margin: 0 0 14px;
-        letter-spacing: 2px;
-    }
-
-    .hero h1 {
-        font-size: var(--fs-h1);
-        margin: 0 0 12px;
-        color: var(--color-main);
-    }
-
-    .hero p.lead {
-        color: var(--color-main);
-        margin: 0 0 20px;
     }
 
     .btn-ghost {
         display: inline-block;
-        padding: 10px 18px;
+        padding: 10px 1rem;
         border-radius: 24px;
         border: 1px solid rgba(122, 75, 58, 0.2);
         background: #fff;
@@ -55,16 +35,9 @@
         box-shadow: 0 6px 24px rgba(50, 30, 20, 0.12);
     }
 
-    .best-menu {
-        color: #fff;
-        padding: 64px 0;
-        text-align: center;
-    }
-
     .best-menu h3 {
         color: var(--color-main);
         letter-spacing: 4px;
-        margin-bottom: 32px;
     }
 
     .best-menu .items {
@@ -80,7 +53,7 @@
     }
 
     .best-menu figure {
-        margin: 0 0 18px;
+        margin: 0 0 1rem;
     }
 
     .best-menu img {
@@ -94,92 +67,37 @@
         display: inline-block;
         background: var(--color-point2);
         color: var(--color-main);
-        padding: 6px 10px;
         border-radius: 999px;
-        font-size: 1.33rem;
+        font-size: var(--fs-body1);
         font-weight: var(--fw2);
-        margin-bottom: 1.33rem;
-    }
-
-    .item .title {
-        color: #fff;
-        font-weight: var(--fw2);
-        margin-top: 8px;
     }
 
     .item .sub {
         color: rgba(255, 255, 255, 0.6);
-        font-size: 0.8125rem;
-    }
-
-    .mid-cta {
-        background: #fdeff2;
-        padding: 36px 0;
-        text-align: center;
-    }
-
-    .mid-cta .brand-phrase {
-        color: var(--color-point1);
-        font-weight: var(--fw2);
-        font-size: var(--fs-h4);
-    }
-
-    .events {
-        padding: 56px 0;
-        max-width: 1100px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
-    }
-
-    .card {
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 8px var(--fs-h4) rgba(30, 20, 10, 0.06);
-        overflow: hidden;
-    }
-
-    .card img {
-        width: 100%;
-        height: 190px;
-        object-fit: cover;
-        display: block;
-    }
-
-    .card .card-body {
-        padding: 16px;
-    }
-
-    .card h4 {
-        margin: 0 0 8px;
-        color: var(--color-main);
-    }
-
-    .card p {
-        margin: 0;
-        color: var(--color-main);
-        font-size: 14px;
+        font-size: var(--fs-body2);
     }
 
     .insta-section-wrap {
         background-color: var(--main-background-color-0);
+        display: flex;
     }
 
     .insta-section {
-        padding: 60px 0;
-        max-width: 1100px;
+        gap: 3rem;
+
         margin: 0 auto;
         display: flex;
-        gap: 36px;
-        align-items: flex-start;
+        padding: 6rem 3rem;
+        display: flex;
+        align-self: center;
+
+        box-sizing: border-box;
     }
 
     .insta-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
-        width: 480px;
+        gap: 2rem;
     }
 
     .insta-grid img {
@@ -190,9 +108,48 @@
     }
 
     .insta-info {
-        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
         color: var(--color-main);
     }
+
+    .insta-info>img {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 1rem;
+    }
+
+    .insta-info h2 {
+        margin-bottom: 2rem;
+        font-size: var(--fs-h2);
+        font-weight: var(--fw1);
+    }
+
+    .insta-info p {
+        margin-bottom: 2rem;
+        font-size: var(--fs-h3);
+    }
+
+    .insta-info strong {
+        font-size: var(--fs-h3);
+        font-weight: var(--fw1);
+    }
+
+    .insta-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 206px);
+    }
+
+    .insta-grid img {
+        width: 206px;
+        height: 204px;
+        display: block;
+        object-fit: cover;
+        border-radius: 0;
+    }    
 
     .stamp-banner {
         background: var(--color-blue-0);
@@ -229,7 +186,6 @@
         }
 
         .insta-grid {
-            width: 100%;
             grid-template-columns: repeat(3, 1fr);
         }
     }
@@ -274,65 +230,22 @@
         display: none;
     }
 
-    .benefit-bar {
-        background: #fdeff2;
-        padding: 10px 0;
-        font-size: 0.8125rem;
-        color: var(--color-main);
-        border-top: 1px solid rgba(0, 0, 0, 0.03);
-    }
-
-    .benefit-bar {
-        height: 70px;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        background: var(--color-pink-0);
-        color: var(--color-main);
-        box-sizing: border-box;
-    }
-
-    .benefit-bar .content-frame {
-        display: grid;
-        grid-template-columns: 230px 1fr auto;
-        align-items: center;
-        gap: 0;
-
-        max-width: 1280px;
-    }
-
-    .benefit-bar strong {
-        font-size: 1.0625rem;
-        font-weight: var(--fw2);
-    }
-
-    .benefit-bar span {
-        color: var(--color-main);
-        font-size: 0.875rem;
-    }
-
-    .benefit-bar a {
-        padding: 7px 19px;
-        border: 1px solid var(--color-main);
-        border-radius: 999px;
-        font-size: 0.8125rem;
-        font-weight: var(--fw2);
-    }
-
     .best-menu {
         min-height: 720px;
-        padding: 96px 32px 80px;
+        padding: 6rem 3rem;
         box-sizing: border-box;
+
+        text-align: center;
     }
 
     .best-menu h2,
     .event-section h2 {
-        margin: 0 0 65px;
         color: var(--color-main);
         font-size: var(--fs-h2);
-        line-height: 1;
         font-weight: var(--fw2);
         text-align: center;
+
+        margin-bottom: 3rem;
     }
 
     .best-menu .items {
@@ -351,12 +264,12 @@
     }
 
     .best-menu .badge {
-        margin: 0 0 18px;
-        padding: 5px 10px;
+        margin: 0 0 1rem;
+        padding: 4px 8px;
         background: var(--color-point2);
         color: #fff;
-        font-size: var(--fs-defail);
-        line-height: 1;
+        font-size: var(--fs-body1);
+        line-height: var(--lh2);
         margin-right: auto;
         display: block;
         width: fit-content;
@@ -385,8 +298,8 @@
     }
 
     .best-menu .item h3 {
-        margin: 28px 0 0;
-        padding-top: 17px;
+        margin: 1rem 0 0;
+        padding-top: 1rem;
         border-top: 2px solid var(--gray-300);
         font-size: var(--fs-h3);
         font-weight: var(--fw2);
@@ -394,9 +307,9 @@
     }
 
     .best-menu .item p {
-        margin-top: 7px;
+        margin-top: .5rem;
         color: var(--gray-600);
-        font-size: 0.6875rem;
+        font-size: var(--fs-body2);
     }
 
     .middle-banner {
@@ -422,13 +335,12 @@
     }
 
     .event-section {
-        min-height: 650px;
-        padding: 65px 0 70px;
+        padding: 6rem 0;
         box-sizing: border-box;
     }
 
     .event-section h2 {
-        margin-bottom: 52px;
+        margin-bottom: 3rem;
         text-transform: none;
     }
 
@@ -459,70 +371,26 @@
 
     .event-more {
         display: block;
-        margin-top: 18px;
+        margin-top: 1rem;
         color: var(--color-main);
         font-weight: var(--fw2);
         text-align: right;
     }
 
-    .insta-section {
-        max-width: 1220px;
-        min-height: 630px;
-        margin: 0 auto;
-        padding: 96px 32px;
-        display: grid;
-        grid-template-columns: 410px 618px;
-        justify-content: space-between;
-        align-items: center;
-        gap: 70px;
-        box-sizing: border-box;
-    }
-
-    .insta-info {
-        color: var(--color-main);
-    }
-
-    .insta-info>img {
-        width: 24px;
-        height: 24px;
-        margin-bottom: 22px;
-    }
-
-    .insta-info h2 {
-        margin: 0 0 28px;
-        font-size: var(--fs-h2);
-        font-weight: var(--fw1);
-    }
-
-    .insta-info p {
-        margin: 0 0 30px;
-        font-size: var(--fs-h4);
-        line-height: 1.45;
-    }
-
-    .insta-info strong {
-        font-size: 1.125rem;
-        font-weight: var(--fw1);
-    }
-
-    .insta-grid {
-        width: 618px;
-        display: grid;
-        grid-template-columns: repeat(3, 206px);
-        gap: 2px;
-    }
-
-    .insta-grid img {
-        width: 206px;
-        height: 204px;
-        display: block;
-        object-fit: cover;
-        border-radius: 0;
-    }
-
     .stamp-banner {
         padding: 0;
         background: var(--color-blue-0);
+    }
+     
+    @media (max-width: 1225px) {
+        .insta-grid {
+            grid-template-columns: repeat(3, 156px);
+        }
+
+        .insta-grid img {
+            width: 156px;
+            height: 155px;
+        }
     }
 
     @media (max-width: 1200px) {
@@ -535,8 +403,7 @@
         }
     }
 
-    /* Tablet layout: 769px - 1024px */
-    @media (min-width: 769px) and (max-width: 1024px) {
+    @media (max-width: 1024px) {
         .content-frame {
             width: calc(100% - 64px);
         }
@@ -557,32 +424,6 @@
             bottom: 34px;
         }
 
-        .benefit-bar {
-            height: 60px;
-        }
-
-        .benefit-bar .content-frame {
-            grid-template-columns: 200px 1fr auto;
-        }
-
-        .benefit-bar strong {
-            font-size: 1.066rem;
-        }
-
-        .benefit-bar span {
-            font-size: 12px;
-        }
-
-        .best-menu {
-            min-height: 465px;
-            padding: 48px 40px 50px;
-        }
-
-        .best-menu h2 {
-            margin-bottom: 42px;
-            font-size: 28px;
-        }
-
         .best-menu .items {
             max-width: 800px;
             grid-template-columns: repeat(3, 150px);
@@ -597,22 +438,6 @@
 
         .best-menu figure {
             height: 150px;
-        }
-
-        .best-menu .badge {
-            margin-bottom: 14px;
-            padding: 5px 9px;
-            font-size: 10px;
-        }
-
-        .best-menu .item h3 {
-            margin-top: 17px;
-            padding-top: 12px;
-            font-size: 16px;
-        }
-
-        .best-menu .item p {
-            font-size: 9px;
         }
 
         .middle-banner,
@@ -633,108 +458,11 @@
             object-fit: cover;
         }
 
-        .event-section {
-            min-height: 470px;
-            padding: 48px 0 50px;
-        }
-
-        .event-section h2 {
-            margin-bottom: 42px;
-            font-size: 28px;
-        }
-
         .event-grid {
             grid-template-columns: repeat(3, 1fr);
             gap: 28px;
         }
 
-        .event-more {
-            margin-top: 16px;
-            font-size: 14px;
-        }
-
-        .insta-section {
-            max-width: 960px;
-            min-height: 510px;
-            padding: 55px 32px;
-            grid-template-columns: 300px 474px;
-            gap: 65px;
-        }
-
-        .insta-info>img {
-            margin-bottom: 18px;
-        }
-
-        .insta-info h2 {
-            margin-bottom: 24px;
-            font-size: 23px;
-        }
-
-        .insta-info p {
-            margin-bottom: 25px;
-            font-size: 17px;
-        }
-
-        .insta-info strong {
-            font-size: 15px;
-        }
-
-        .insta-grid {
-            width: 474px;
-            grid-template-columns: repeat(3, 156px);
-            gap: 3px;
-        }
-
-        .insta-grid img {
-            width: 156px;
-            height: 155px;
-        }
-
-        .footer-top .footer-inner {
-            min-height: 230px;
-            grid-template-columns: 1fr;
-            align-content: center;
-            justify-items: start;
-            gap: 25px;
-            padding: 34px 0;
-            box-sizing: border-box;
-        }
-
-        .footer-nav {
-            grid-row: auto;
-        }
-
-        .footer-nav ul {
-            flex-wrap: wrap;
-            gap: 14px 30px;
-        }
-
-        .footer-nav a {
-            font-size: 15px;
-        }
-
-        .footer-social {
-            gap: 14px;
-        }
-
-        .footer-bottom .footer-inner {
-            min-height: 330px;
-            grid-template-columns: 1fr;
-            gap: 32px;
-            padding: 48px 0;
-        }
-
-        .footer-contact p {
-            font-size: 16px;
-        }
-
-        .footer-contact strong {
-            font-size: 28px;
-        }
-
-        .footer-company {
-            font-size: 15px;
-        }
     }
 
     @media (max-width: 768px) {
@@ -748,44 +476,9 @@
             object-position: 58% center;
         }
 
-        .benefit-bar {
-            height: auto;
-            padding: 18px 0;
-        }
-
-        .benefit-bar .content-frame {
-            grid-template-columns: 1fr auto;
-            gap: 5px 16px;
-        }
-
-        .benefit-bar span {
-            grid-column: 1 / -1;
-            grid-row: 2;
-        }
-
-        .benefit-bar a {
-            grid-column: 2;
-            grid-row: 1;
-        }
-
-        .best-menu {
-            min-height: auto;
-            padding: 65px 16px;
-        }
-
-        .best-menu h2,
-        .event-section h2 {
-            margin-bottom: 45px;
-            font-size: 28px;
-        }
-
         .best-menu .items {
             grid-template-columns: 1fr;
             justify-items: center;
-        }
-
-        .event-section {
-            padding: 60px 0;
         }
 
         .event-grid {
@@ -806,8 +499,8 @@
         }
 
         .insta-grid {
-            width: min(618px, 100%);
             grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
         }
 
         .insta-grid img {
@@ -815,46 +508,7 @@
             height: auto;
             aspect-ratio: 1 / 1;
         }
-    }
 
-    @media (max-width: 520px) {
-        .hero-slider .swiper-slide img {
-            min-height: 310px;
-        }
-
-        .benefit-bar strong {
-            font-size: 14px;
-        }
-
-        .benefit-bar span {
-            font-size: 11px;
-        }
-
-        .benefit-bar a {
-            padding: 5px 10px;
-            font-size: 11px;
-        }
-
-        .best-menu figure,
-        .best-menu .item {
-            width: 250px;
-        }
-
-        .best-menu figure {
-            height: 250px;
-        }
-
-        .insta-info h2 {
-            font-size: 23px;
-        }
-
-        .insta-info p {
-            font-size: 16px;
-        }
-    }
-
-    /* Mobile layout: up to 768px */
-    @media (max-width: 768px) {
         .content-frame {
             width: calc(100% - 40px);
         }
@@ -894,47 +548,6 @@
             width: 18px;
         }
 
-        .benefit-bar {
-            height: 52px;
-            padding: 0;
-        }
-
-        .benefit-bar .content-frame {
-            grid-template-columns: 1fr auto;
-            gap: 12px;
-        }
-
-        .benefit-bar strong {
-            display: none;
-        }
-
-        .benefit-bar span {
-            grid-column: 1;
-            grid-row: 1;
-            max-width: 220px;
-            font-size: 10px;
-            line-height: 1.3;
-        }
-
-        .benefit-bar a {
-            grid-column: 2;
-            grid-row: 1;
-            padding: 6px 13px;
-            font-size: 10px;
-        }
-
-        .best-menu {
-            min-height: 280px;
-            padding: 37px 18px 35px;
-            background: #fff;
-            color: var(--color-main);
-        }
-
-        .best-menu h2 {
-            margin-bottom: 35px;
-            color: var(--color-main);
-        }
-
         .best-menu .items {
             max-width: 360px;
             grid-template-columns: repeat(2, 96px);
@@ -959,27 +572,6 @@
             height: 96px;
         }
 
-        .best-menu .badge {
-            margin-bottom: 12px;
-            padding: 5px 8px;
-            font-size: 9px;
-        }
-
-        .best-menu .item h3 {
-            min-height: 35px;
-            margin-top: 9px;
-            padding-top: 10px;
-            color: var(--color-main);
-            font-size: 12px;
-            line-height: 1.3;
-        }
-
-        .best-menu .item p {
-            margin-top: 4px;
-            font-size: 7px;
-            line-height: 1.25;
-        }
-
         .middle-banner,
         .middle-banner img {
             height: 142px;
@@ -990,19 +582,11 @@
             object-position: center;
         }
 
-        .event-section {
-            min-height: 370px;
-            padding: 38px 0 45px;
-            background: #fff;
-            overflow: hidden;
-        }
-
         .event-section .content-frame {
             width: 100%;
         }
 
         .event-section h2 {
-            margin-bottom: 38px;
             color: var(--color-main);
         }
 
@@ -1035,16 +619,9 @@
             justify-content: center;
             gap: 5px;
             color: var(--color-main);
-            font-size: 14px;
-            line-height: 1;
             font-weight: var(--fw2);
             white-space: nowrap;
             scroll-snap-align: end;
-        }
-
-        .event-more-mobile span {
-            font-size: 19px;
-            line-height: 1;
         }
 
         .event-grid img {
@@ -1064,34 +641,16 @@
 
         .insta-info {
             width: 100%;
-            margin-bottom: 42px;
         }
 
         .insta-info>img {
             width: 20px;
             height: 20px;
-            margin-bottom: 14px;
-        }
-
-        .insta-info h2 {
-            margin-bottom: 25px;
-            font-size: 18px;
-        }
-
-        .insta-info p {
-            margin-bottom: 25px;
-            font-size: 14px;
-            line-height: 1.5;
-        }
-
-        .insta-info strong {
-            font-size: 13px;
         }
 
         .insta-grid {
             width: 100%;
             grid-template-columns: repeat(3, 1fr);
-            gap: 5px;
         }
 
         .insta-grid img {
@@ -1109,74 +668,19 @@
             object-fit: cover;
             object-position: center;
         }
+    }
 
-        .footer-inner {
-            width: calc(100% - 48px);
+    @media (max-width: 520px) {
+        .hero-slider .swiper-slide img {
+            min-height: 310px;
         }
-
-        .footer-top .footer-inner {
-            min-height: 0;
-            padding: 38px 0 34px;
-            grid-template-columns: 1fr;
-            align-content: start;
-            gap: 24px;
-            box-sizing: border-box;
+        
+        .best-menu figure,
+        .best-menu .item {
+            width: 250px;
         }
-
-        .footer-logo img {
-            width: 150px;
-        }
-
-        .footer-nav {
-            grid-column: auto;
-            grid-row: auto;
-            width: 100%;
-        }
-
-        .footer-nav ul {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 24px 22px;
-        }
-
-        .footer-nav a {
-            font-size: 12px;
-            line-height: 1.4;
-        }
-
-        .footer-social {
-            gap: 14px;
-        }
-
-        .footer-social img {
-            width: 18px;
-            height: 18px;
-        }
-
-        .footer-bottom .footer-inner {
-            min-height: 0;
-            padding: 38px 0 44px;
-            gap: 31px;
-            box-sizing: border-box;
-        }
-
-        .footer-contact p {
-            margin-bottom: 5px;
-        }
-
-        .footer-company {
-            font-size: 10px;
-        }
-
-        .footer-company b {
-            min-width: 80px;
-        }
-
-        .footer-company .company-row {
-            margin-top: 16px;
-        }
-
-        .footer-company .copyright {
-            margin-top: 16px;
+        
+        .best-menu figure {
+            height: 250px;
         }
     }

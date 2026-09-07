@@ -78,20 +78,18 @@ button {
     border-radius: 999px;
     background: var(--color-point2);
     color: #fff;
-    font-size: 14px;
+    font-size: var(--fs-body1);
     font-weight: var(--fw2);
 }
 
 .product-heading h1 {
     margin: 20px 50px 10px 0;
-    font-size: 38px;
-    line-height: 1.25;
+    font-size: var(--fs-h1);
     font-weight: var(--fw1);
 }
 
 .product-price {
-    font-size: 36px;
-    line-height: 1.2;
+    font-size: var(--fs-h1);
     font-weight: var(--fw1);
 }
 
@@ -128,13 +126,14 @@ button {
 
 .product-meta dt {
     color: var(--gray-700);
-    font-size: 15px;
+    font-size: var(--fs-body1);
+    line-height: var(--lh2);
 }
 
 .product-meta dd {
     margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: var(--fs-body1);
+    line-height: var(--lh2);
 }
 
 .quantity-row dd {
@@ -159,18 +158,20 @@ button {
     border: 0;
     background: transparent;
     color: var(--gray-700);
-    font-size: 21px;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .quantity-value {
     min-width: 14px;
     color: var(--gray-600);
+    font-weight: var(--fw2);
     text-align: center;
 }
 
 .line-price {
-    font-size: 20px;
+    font-size: var(--fs-h4);
 }
 
 .product-total {
@@ -182,11 +183,11 @@ button {
 
 .product-total span {
     color: var(--gray-700);
-    font-size: 24px;
+    font-size: var(--fs-h3);
 }
 
 .product-total strong {
-    font-size: 32px;
+    font-size: var(--fs-h2);
     font-weight: var(--fw1);
 }
 
@@ -206,14 +207,14 @@ button {
     border: 1px solid var(--color-point1);
     background: var(--color-point1);
     color: #fff;
-    font-size: 22px;
+    font-size: var(--fs-h3);
     font-weight: var(--fw2);
 }
 
 .cart-button {
     border: 1px solid var(--gray-500);
     background: #fff;
-    font-size: 21px;
+    font-size: var(--fs-h3);
 }
 
 .favorite-button {
@@ -239,7 +240,7 @@ button {
     display: flex;
     justify-content: space-between;
     color: var(--gray-700);
-    font-size: 15px;
+    font-size: var(--fs-body1);
 }
 
 .product-tabs a {
@@ -281,14 +282,6 @@ button {
         height: 60px;
     }
 
-    .product-heading h1 {
-        font-size: 28px;
-    }
-
-    .product-price {
-        font-size: 28px;
-    }
-
     .product-heading {
         min-height: 200px;
     }
@@ -306,14 +299,6 @@ button {
         min-height: 128px;
     }
 
-    .product-total span {
-        font-size: 22px;
-    }
-
-    .product-total strong {
-        font-size: 28px;
-    }
-
     .product-actions {
         grid-template-columns: 1fr 1fr 42px;
         gap: 14px;
@@ -321,11 +306,6 @@ button {
 
     .product-actions>button {
         height: 42px;
-    }
-
-    .buy-button,
-    .cart-button {
-        font-size: 16px;
     }
 
     .favorite-button {
@@ -368,16 +348,10 @@ button {
 
     .product-badge {
         padding: 5px 9px;
-        font-size: 11px;
     }
 
     .product-heading h1 {
         margin: 14px 46px 6px 0;
-        font-size: 20px;
-    }
-
-    .product-price {
-        font-size: 20px;
     }
 
     .share-button {
@@ -400,42 +374,14 @@ button {
         min-height: 79px;
     }
 
-    .product-meta dt {
-        font-size: 11px;
-    }
-
-    .product-meta dd {
-        font-size: 11px;
-    }
-
     .quantity-control {
         height: 25px;
         padding: 0 7px;
         gap: 10px;
     }
 
-    .quantity-control button {
-        font-size: 16px;
-    }
-
-    .quantity-value {
-        font-size: 11px;
-    }
-
-    .line-price {
-        font-size: 12px;
-    }
-
     .product-total {
         min-height: 90px;
-    }
-
-    .product-total span {
-        font-size: 15px;
-    }
-
-    .product-total strong {
-        font-size: 18px;
     }
 
     .product-actions {
@@ -447,11 +393,6 @@ button {
         height: 31px;
     }
 
-    .buy-button,
-    .cart-button {
-        font-size: 12px;
-    }
-
     .favorite-button {
         padding: 2px;
     }
@@ -460,6 +401,5 @@ button {
         width: 100%;
         margin-top: 68px;
         padding-bottom: 27px;
-        font-size: 10px;
     }
 }

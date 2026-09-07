@@ -96,8 +96,7 @@ main {
     display: flex;
     align-items: center;
 
-    font-size: 1.125rem;
-    line-height: 24px;
+    font-size: var(--fs-h4);
     font-weight: var(--fw2);
 
     white-space: nowrap;
@@ -137,7 +136,7 @@ main {
     padding: 9px 12px;
     color: var(--gray-700);
     font-size: var(--fs-body1);
-    line-height: 20px;
+    line-height: var(--lh2);
     white-space: nowrap;
     transition: color .2s ease;
 }
@@ -541,15 +540,7 @@ main {
     }
 
     .main-nav .submenu a {
-        padding: 14px 28px;
-    }
-
-    .main-nav .submenu li:first-child a {
-        padding-top: 14px;
-    }
-
-    .main-nav .submenu li:last-child a {
-        padding-bottom: 14px;
+        padding: 20px 24px;
     }
 
     .main-nav>ul>.nav-item.is-expanded>.submenu {

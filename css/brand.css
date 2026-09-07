@@ -33,58 +33,13 @@ body {
     margin: 0 auto;
 }
 
-.benefit-bar {
-    background: #fdeff2;
-    padding: 10px 0;
-    font-size: 0.8125rem;
-    color: var(--color-main);
-    border-top: 1px solid rgba(0, 0, 0, 0.03);
-}
-
-.benefit-bar {
-    height: 70px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    background: var(--color-pink-0);
-    color: var(--color-main);
-    box-sizing: border-box;
-}
-
-.benefit-bar .content-frame {
-    display: grid;
-    grid-template-columns: 230px 1fr auto;
-    align-items: center;
-    gap: 0;
-
-    max-width: 1280px;
-}
-
-.benefit-bar strong {
-    font-size: 1.0625rem;
-    font-weight: var(--fw2);
-}
-
-.benefit-bar span {
-    color: var(--color-main);
-    font-size: 0.875rem;
-}
-
-.benefit-bar a {
-    padding: 7px 19px;
-    border: 1px solid var(--color-main);
-    border-radius: 999px;
-    font-size: 0.8125rem;
-    font-weight: var(--fw2);
-}
-
 .making-section,
 .moments-section {
     text-align: center;
 }
 
 .making-section {
-    padding: 98px 48px 0;
+    padding: 6rem 3rem;
 }
 
 .making-section h2,
@@ -96,7 +51,9 @@ body {
 .section-dots {
     width: 6px;
     height: 6px;
-    margin: 20px auto 76px;
+
+    margin: 1rem auto 6rem;    
+
     display: block;
     border-radius: 50%;
     background: var(--color-point1);
@@ -141,16 +98,15 @@ body {
 .making-card p {
     margin-top: 27px;
     font-size: var(--fs-body1);
-    line-height: 1.45;
 }
 
 .moments-section {
-    padding: 195px 48px 190px;
+    padding: 6rem 3rem;
 }
 
 .moments-images {
     width: min(1180px, 100%);
-    margin: 0 auto 45px;
+    margin: 0 auto 3rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -175,6 +131,9 @@ body {
     font-size: var(--fs-h3);
 }
 
+
+
+
 @media (max-width: 1024px) {
     .brand-page {
         margin-top: 64px;
@@ -183,17 +142,15 @@ body {
     .discover-cta {
         height: 60px;
     }
-}
 
-@media (min-width: 769px) and (max-width: 1024px) {
     .making-section {
-        padding: 90px 80px 0;
+        padding: 6rem 2rem;
     }
 
     .section-dots {
         width: 6px;
         height: 6px;
-        margin: 16px auto 78px;
+
         border-radius: 50%;
         background: var(--color-point1);
         box-shadow: 14px 0 var(--color-point2), 28px 0 var(--color-point3);
@@ -231,22 +188,6 @@ body {
     .moments-section strong {
         margin-top: 24px;
     }
-
-    .benefit-bar {
-        height: 60px;
-    }
-
-    .benefit-bar .content-frame {
-        grid-template-columns: 200px 1fr auto;
-    }
-
-    .benefit-bar strong {
-        font-size: 1.066rem;
-    }
-
-    .benefit-bar span {
-        font-size: 12px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -267,14 +208,10 @@ body {
         object-fit: cover;
     }
 
-    .making-section {
-        padding: 75px 25px 0;
-    }
-
     .section-dots {
         width: 6px;
         height: 6px;
-        margin: 14px auto 68px;
+        
         border-radius: 50%;
         background: var(--color-point1);
         box-shadow: 14px 0 var(--color-point2), 28px 0 var(--color-point3);
@@ -313,25 +250,15 @@ body {
 
     .making-card p {
         margin-top: 12px;
-        line-height: 1.25;
     }
 
     .making-copy {
         width: 60%;
     }
 
-    .moments-section {
-        padding: 145px 20px 164px;
-    }
-
-    .moments-section .section-dots {
-        margin-bottom: 56px;
-    }
-
     .moments-images {
         width: min(362px, 100%);
         height: 170px;
-        margin-bottom: 30px;
         grid-template-columns: repeat(2, 1fr);
         border-radius: 90px;
     }
@@ -339,82 +266,6 @@ body {
     .moments-images img {
         height: 170px;
         object-fit: cover;
-    }
-
-    .moments-section strong {
-        margin-top: 18px;
-    }
-
-    .benefit-bar {
-        height: auto;
-        padding: 18px 0;
-    }
-
-    .benefit-bar .content-frame {
-        grid-template-columns: 1fr auto;
-        gap: 5px 16px;
-    }
-
-    .benefit-bar span {
-        grid-column: 1 / -1;
-        grid-row: 2;
-    }
-
-    .benefit-bar a {
-        grid-column: 2;
-        grid-row: 1;
-    }
-}
-
-@media (max-width: 520px) {
-    .benefit-bar strong {
-        font-size: 14px;
-    }
-
-    .benefit-bar span {
-        font-size: 11px;
-    }
-
-    .benefit-bar a {
-        padding: 5px 10px;
-        font-size: 11px;
-    }
-}
-
-/* Mobile layout: up to 768px */
-@media (max-width: 768px) {
-    .benefit-bar {
-        height: 52px;
-        padding: 0;
-    }
-
-    .benefit-bar .content-frame {
-        grid-template-columns: 1fr auto;
-        gap: 12px;
-    }
-
-    .benefit-bar strong {
-        display: none;
-    }
-
-    .benefit-bar span {
-        grid-column: 1;
-        grid-row: 1;
-        max-width: 220px;
-        font-size: 10px;
-        line-height: 1.3;
-    }
-
-    .benefit-bar a {
-        grid-column: 2;
-        grid-row: 1;
-        padding: 6px 13px;
-        font-size: 10px;
-    }
-        
-    .benefit-bar .content-frame {
-        grid-template-columns: 1fr auto;
-        gap: 12px;
     }
 
     .content-frame {
