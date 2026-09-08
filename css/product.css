@@ -395,10 +395,6 @@ button {
         gap: 12px;
     }
 
-    .product-actions>button {
-        height: 31px;
-    }
-
     .favorite-button {
         padding: 2px;
     }
