@@ -455,7 +455,21 @@ html {
     font-weight: var(--fw2);
 }
 
-@media (max-width:1024px) {
+.footer-company .company-row {
+    display: flex;
+}
+
+.footer-company .company-row>div {
+    margin-right: 3rem;
+}
+.footer-company .company-row>div:nth-of-type(3) {
+    margin-right: 8px;
+}
+.footer-company .company-row>div:nth-of-type(4) {
+    margin-right: 0;
+}
+
+@media (max-width:1076px) {
     .footer-top .footer-inner {
         display: flex;
         flex-direction: column;
@@ -491,6 +505,14 @@ html {
         display: grid;
         grid-template-columns: repeat(2, minmax(50px, 1fr));
         gap: 24px 12px;
+    }
+}
+
+@media (max-width:568px) {
+    .footer-company .company-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4px;
     }
 }
 

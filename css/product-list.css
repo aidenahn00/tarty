@@ -140,7 +140,7 @@ body {
 .empty-message {
     padding: 90px 0;
     color: var(--gray-600);
-    font-size: var(--fs-body2);
+    font-size: var(--fs-h4);
     text-align: center;
 }
 

@@ -48,10 +48,6 @@
         margin: 0 auto;
     }
 
-    .best-menu .item {
-        width: 220px;
-    }
-
     .best-menu figure {
         margin: 0 0 1rem;
     }
@@ -86,8 +82,8 @@
         gap: 3rem;
 
         margin: 0 auto;
-        display: flex;
         padding: 6rem 3rem;
+
         display: flex;
         align-self: center;
 
@@ -158,6 +154,12 @@
         color: var(--color-main);
     }
 
+    @media (max-width: 825px) {
+        .insta-section {
+            flex-direction: column;
+        } 
+    }
+
     @media (max-width:768px) {
         .hero {
             flex-direction: column;
@@ -179,10 +181,6 @@
 
         .events {
             grid-template-columns: 1fr;
-        }
-
-        .insta-section {
-            flex-direction: column;
         }
 
         .insta-grid {
@@ -231,7 +229,6 @@
     }
 
     .best-menu {
-        min-height: 720px;
         padding: 6rem 3rem;
         box-sizing: border-box;
 
@@ -258,8 +255,6 @@
     }
 
     .best-menu .item {
-        width: 291px;
-        color: #fff;
         text-align: center;
     }
 
@@ -276,8 +271,6 @@
     }
 
     .best-menu figure {
-        width: 291px;
-        height: 293px;
         margin: 0;
         overflow: visible;
         border-radius: 0;
@@ -408,11 +401,6 @@
             width: calc(100% - 64px);
         }
 
-        .hero-slider,
-        .hero-slider .swiper-slide {
-            height: 800px;
-        }
-
         .hero-slider .swiper-slide img {
             width: 100%;
             height: 100%;
@@ -426,32 +414,13 @@
 
         .best-menu .items {
             max-width: 800px;
-            grid-template-columns: repeat(3, 150px);
+            grid-template-columns: repeat(3, 1fr);
             justify-content: space-between;
             gap: 40px;
         }
 
-        .best-menu .item,
-        .best-menu figure {
-            width: 150px;
-        }
-
-        .best-menu figure {
-            height: 150px;
-        }
-
-        .middle-banner,
-        .middle-banner img {
-            height: 200px;
-        }
-
         .middle-banner img {
             object-fit: cover;
-        }
-
-        .stamp-banner,
-        .stamp-banner img {
-            height: 120px;
         }
 
         .stamp-banner img {
@@ -465,35 +434,35 @@
 
     }
 
-    @media (max-width: 768px) {
-        .content-frame {
-            width: calc(100% - 32px);
-        }
-
-        .hero-slider .swiper-slide img {
-            min-height: 360px;
-            object-fit: cover;
-            object-position: 58% center;
-        }
-
-        .best-menu .items {
-            grid-template-columns: 1fr;
-            justify-items: center;
-        }
-
-        .event-grid {
-            grid-template-columns: 1fr;
-            max-width: 478px;
-            margin: 0 auto;
-        }
-
+    @media (max-width: 1075px) {
         .insta-section {
+            max-width: none;
+            width: 100%;
+
             min-height: auto;
-            padding: 70px 24px;
             grid-template-columns: 1fr;
             justify-items: center;
         }
 
+        .insta-info {
+            width: 100%;
+        }
+
+        .insta-info>img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .insta-grid {
+            width: 100%;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .insta-grid img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+        }
         .insta-info {
             width: min(618px, 100%);
         }
@@ -508,14 +477,27 @@
             height: auto;
             aspect-ratio: 1 / 1;
         }
+    }
+
+    @media (max-width: 768px) {
+        .content-frame {
+            width: calc(100% - 32px);
+        }
+
+        .hero-slider .swiper-slide img {
+            min-height: 360px;
+            object-fit: cover;
+            object-position: 58% center;
+        }
+
+        .event-grid {
+            grid-template-columns: 1fr;
+            max-width: 478px;
+            margin: 0 auto;
+        }
 
         .content-frame {
             width: calc(100% - 40px);
-        }
-
-        .hero-slider,
-        .hero-slider .swiper-slide {
-            height: 500px;
         }
 
         .hero-slider .swiper-slide {
@@ -549,9 +531,10 @@
         }
 
         .best-menu .items {
-            max-width: 360px;
-            grid-template-columns: repeat(2, 96px);
+            max-width: 390px;
+            grid-template-columns: repeat(2, 1fr);
             justify-content: center;
+            justify-items: center;
             gap: 28px;
         }
 
@@ -561,20 +544,6 @@
 
         .best-menu .item:nth-child(3) {
             display: none;
-        }
-
-        .best-menu .item,
-        .best-menu figure {
-            width: 96px;
-        }
-
-        .best-menu figure {
-            height: 96px;
-        }
-
-        .middle-banner,
-        .middle-banner img {
-            height: 142px;
         }
 
         .middle-banner img {
@@ -632,38 +601,6 @@
             display: none;
         }
 
-        .insta-section {
-            max-width: none;
-            min-height: 650px;
-            padding: 72px 24px 65px;
-            display: block;
-        }
-
-        .insta-info {
-            width: 100%;
-        }
-
-        .insta-info>img {
-            width: 20px;
-            height: 20px;
-        }
-
-        .insta-grid {
-            width: 100%;
-            grid-template-columns: repeat(3, 1fr);
-        }
-
-        .insta-grid img {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 1 / 1;
-        }
-
-        .stamp-banner,
-        .stamp-banner img {
-            height: 100px;
-        }
-
         .stamp-banner img {
             object-fit: cover;
             object-position: center;
@@ -673,14 +610,5 @@
     @media (max-width: 520px) {
         .hero-slider .swiper-slide img {
             min-height: 310px;
-        }
-        
-        .best-menu figure,
-        .best-menu .item {
-            width: 250px;
-        }
-        
-        .best-menu figure {
-            height: 250px;
         }
     }
