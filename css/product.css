@@ -21,7 +21,7 @@ button {
     display: grid;
     grid-template-columns: minmax(460px, 685px) minmax(520px, 750px);
     justify-content: space-between;
-    gap: 84px;
+    gap: 5.25rem;
 }
 
 .main-image-wrap {

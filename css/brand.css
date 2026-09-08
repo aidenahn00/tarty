@@ -176,10 +176,6 @@ body {
         margin-top: 12px;
     }
 
-    .moments-section {
-        padding: 173px 48px 160px;
-    }
-
     .moments-images {
         width: min(704px, 100%);
         gap: 14px;
