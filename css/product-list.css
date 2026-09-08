@@ -97,7 +97,7 @@ body {
     z-index: 1;
     top: -20px;
     left: 0;
-    padding: 5px 9px;
+    padding: 4px 8px;
     border-radius: 999px;
     color: #fff;
     font-size: var(--fs-body1);
@@ -149,10 +149,6 @@ body {
         margin-top: 64px;
     }
 
-    .menu-hero {
-        height: min(78.125vw, 800px);
-    }
-
     .menu-catalog {
         width: calc(100% - 104px);
         padding: 96px 0 130px;
@@ -165,14 +161,14 @@ body {
     }
 
     .product-grid {
-        grid-template-columns: repeat(5, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         column-gap: 40px;
         row-gap: 138px;
     }
 
     .menu-badge {
         top: -14px;
-        padding: 5px 8px;
+        padding: 3px 7px;
     }
 
     .card-copy {
@@ -191,10 +187,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .menu-hero {
-        height: min(124.4vw, 620px);
-    }
-
     .menu-catalog {
         width: calc(100% - 40px);
         padding: 92px 0 100px;
@@ -217,7 +209,7 @@ body {
 
     .menu-badge {
         top: -17px;
-        padding: 5px 8px;
+        padding: 3px 7px;
     }
 
     .card-copy {

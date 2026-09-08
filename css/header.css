@@ -135,7 +135,7 @@ main {
     display: block;
     padding: 9px 12px;
     color: var(--gray-700);
-    font-size: var(--fs-body1);
+    font-size: var(--fs-h4);
     line-height: var(--lh2);
     white-space: nowrap;
     transition: color .2s ease;
