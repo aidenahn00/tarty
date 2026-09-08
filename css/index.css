@@ -127,6 +127,7 @@
     .insta-info p {
         margin-bottom: 2rem;
         font-size: var(--fs-h3);
+        line-height: var(--lh2);
     }
 
     .insta-info strong {
@@ -229,20 +230,21 @@
     }
 
     .best-menu {
-        padding: 6rem 3rem;
+        padding: 0 3rem 6rem;
         box-sizing: border-box;
 
         text-align: center;
     }
 
-    .best-menu h2,
-    .event-section h2 {
+    .best-menu h2 {
         color: var(--color-main);
         font-size: var(--fs-h2);
         font-weight: var(--fw2);
-        text-align: center;
 
         margin-bottom: 3rem;
+        padding-top: 6rem;
+
+        text-align: center;
     }
 
     .best-menu .items {
@@ -328,12 +330,20 @@
     }
 
     .event-section {
-        padding: 6rem 0;
+        padding-bottom: 6rem;
         box-sizing: border-box;
     }
 
     .event-section h2 {
+        color: var(--color-main);
+        font-size: var(--fs-h2);
+        font-weight: var(--fw2);
+
         margin-bottom: 3rem;
+        padding-top: 6rem;
+
+        text-align: center;
+
         text-transform: none;
     }
 
