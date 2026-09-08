@@ -27,7 +27,7 @@ body {
     position: relative;
     width: min(1824px, calc(100% - 96px));
     margin: 0 auto;
-    padding: 132px 0 170px;
+    padding: 6rem 0;
 }
 
 .event-tabs {
@@ -139,11 +139,6 @@ body {
         margin-top: 64px;
     }
 
-    .event-catalog {
-        width: calc(100% - 64px);
-        padding: 104px 0 130px;
-    }
-
     .event-tabs {
         top: -31px;
         width: 62vw;
@@ -172,11 +167,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .event-catalog {
-        width: calc(100% - 48px);
-        padding: 94px 0 120px;
-    }
-
     .event-tabs {
         top: -23px;
         width: calc(100% - 16px);
