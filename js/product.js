@@ -87,5 +87,67 @@ document.addEventListener('DOMContentLoaded', () => {
         headerCartLink.appendChild(dot);
     });
 
+    const productTabs = document.querySelectorAll('.product-tabs a');
+    const detailSection = document.querySelector('.product-detail-images');
+
+    if (detailSection) {
+        const detailContent = Array.from(detailSection.childNodes);
+        const detailLabel = detailSection.getAttribute('aria-label') || '상품 상세정보';
+        const emptyPanels = {};
+
+        const panelContent = {
+            '#reviews': {
+                title: '구매평 (0)',
+                message: '아직 등록된 구매평이 없습니다.',
+            },
+            '#questions': {
+                title: 'Q&A (0)',
+                message: '아직 등록된 문의가 없습니다.',
+            },
+        };
+
+        Object.entries(panelContent).forEach(([target, content]) => {
+            const panel = document.createElement('div');
+            const title = document.createElement('h2');
+            const message = document.createElement('p');
+            title.textContent = content.title;
+            message.textContent = content.message;
+            Object.assign(panel.style, {
+                padding: '0 0 6rem',
+                textAlign: 'center',
+            });
+            title.style.fontWeight = '700';
+            message.style.marginTop = '16px';
+            panel.append(title, message);
+            emptyPanels[target] = panel;
+        });
+
+        productTabs.forEach((tab) => {
+            tab.setAttribute('aria-controls', detailSection.id);
+            if (tab.classList.contains('is-active')) tab.setAttribute('aria-current', 'true');
+
+            tab.addEventListener('click', (event) => {
+                const target = tab.getAttribute('href');
+                if (target !== '#detail' && !emptyPanels[target]) return;
+                event.preventDefault();
+
+                productTabs.forEach((item) => {
+                    const active = item === tab;
+                    item.classList.toggle('is-active', active);
+                    if (active) item.setAttribute('aria-current', 'true');
+                    else item.removeAttribute('aria-current');
+                });
+
+                if (target === '#detail') {
+                    detailSection.replaceChildren(...detailContent);
+                    detailSection.setAttribute('aria-label', detailLabel);
+                } else {
+                    detailSection.replaceChildren(emptyPanels[target]);
+                    detailSection.setAttribute('aria-label', panelContent[target].title);
+                }
+            });
+        });
+    }
+
     updatePrice();
 });

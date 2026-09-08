@@ -30,39 +30,6 @@ body {
     padding: 6rem 3rem;
 }
 
-.event-tabs {
-    position: absolute;
-    top: -36px;
-    left: 50%;
-    z-index: 2;
-    width: min(610px, 48vw);
-    height: 72px;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    transform: translateX(-50%);
-    border-radius: 999px;
-    background: #fff;
-    box-shadow: 0 6px 18px rgba(89, 61, 46, .12);
-    box-sizing: border-box;
-}
-
-.event-tabs button {
-    border: 1px solid transparent;
-    border-radius: 999px;
-    background: transparent;
-    color: var(--gray-500);
-    font-size: var(--fs-h4);
-    cursor: pointer;
-    transition: .2s ease;
-}
-
-.event-tabs button.is-active {
-    border-color: var(--gray-300);
-    color: var(--color-point1);
-    font-weight: var(--fw2);
-}
-
 .event-grid-list {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -151,11 +118,6 @@ body {
         font-size: var(--fs-h4);
     }
 
-    .event-tabs {
-        top: -31px;
-        height: 62px;
-    }
-
     .event-grid-list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 78px 28px;
@@ -178,12 +140,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .event-tabs {
-        top: -23px;
-        height: 46px;
-        padding: 3px;
-    }
-
     .event-grid-list {
         grid-template-columns: repeat(1, minmax(0, 1fr));
         column-gap: 12px;

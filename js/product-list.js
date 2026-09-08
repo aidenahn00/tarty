@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const updateMobileImages = () => {
         productImages.forEach((image) => {
-            if (mobileQuery.matches && image.dataset.mobileSrc) {
-                image.src = image.dataset.mobileSrc;
+            if (mobileQuery.matches && image.dataset.moSrc) {
+                image.src = image.dataset.moSrc;
             } else if (window.innerWidth <= 1024) {
-                image.src = image.dataset.tabletSrc;
+                image.src = image.dataset.padSrc;
             } else {
                 image.src = image.dataset.pcSrc;
             }

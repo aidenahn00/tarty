@@ -97,6 +97,7 @@ body {
 .making-card p {
     margin-top: 27px;
     font-size: var(--fs-body1);
+    line-height: var(--lh2);
 }
 
 .moments-section {

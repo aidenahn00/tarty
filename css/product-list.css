@@ -30,40 +30,6 @@ body {
     padding: 145px 0 180px;
 }
 
-.size-tabs {
-    position: absolute;
-    z-index: 2;
-    top: -35px;
-    left: 50%;
-    width: min(900px, 66vw);
-    height: 70px;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    transform: translateX(-50%);
-    border-radius: 999px;
-    background: #fff;
-    box-shadow: 0 5px 15px rgba(87, 61, 48, .12);
-    box-sizing: border-box;
-}
-
-.size-tabs button {
-    border: 1px solid transparent;
-    border-radius: 999px;
-    background: transparent;
-    color: var(--gray-500);
-    font-size: var(--fs-h4);
-    cursor: pointer;
-    transition: color .2s, border-color .2s, background .2s;
-}
-
-.size-tabs button.is-active {
-    border-color: var(--gray-300);
-    color: var(--color-point1);
-    font-weight: var(--fw2);
-    background: #fff;
-}
-
 .product-grid {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -154,12 +120,6 @@ body {
         padding: 96px 0 130px;
     }
 
-    .size-tabs {
-        top: -31px;
-        width: 62vw;
-        height: 62px;
-    }
-
     .product-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         column-gap: 40px;
@@ -191,13 +151,6 @@ body {
         width: calc(100% - 40px);
         padding: 92px 0 100px;
         overflow: visible;
-    }
-
-    .size-tabs {
-        top: -23px;
-        width: calc(100% - 16px);
-        height: 46px;
-        padding: 3px;
     }
 
     .product-grid {

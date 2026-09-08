@@ -146,7 +146,7 @@ main {
 }
 
 .main-nav>ul>li:nth-child(2) {
-    --submenu-offset: -15px;
+    --submenu-offset: -13px;
 }
 
 .main-nav>ul>li:nth-child(3) {

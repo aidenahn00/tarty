@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const padImageQuery = window.matchMedia('(max-width: 1024px)');
     const mobileImageQuery = window.matchMedia('(max-width: 768px)');
+    const padImageQuery = window.matchMedia('(max-width: 1024px)');
     const responsiveImages = document.querySelectorAll('img[data-pad-src]');
 
     document.querySelectorAll('a.profile-action').forEach((link) => {
