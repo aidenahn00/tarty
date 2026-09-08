@@ -53,6 +53,38 @@ document.addEventListener('DOMContentLoaded', () => {
         const isActive = favoriteButton.classList.toggle('is-active');
         favoriteButton.setAttribute('aria-pressed', String(isActive));
         favoriteButton.setAttribute('aria-label', isActive ? '찜 해제하기' : '찜하기');
+        const favoriteIcon = favoriteButton.querySelector('img');
+        if (favoriteIcon) {
+            favoriteIcon.src = isActive ? './img/icn-heart-fill.svg' : './img/icn-heart.svg';
+            favoriteIcon.alt = isActive ? '찜 해제하기' : '찜하기';
+        }
+    });
+
+    const cartButton = document.querySelector('a.cart-button');
+    const headerCartLink = document.querySelector('.header-actions img[src$="icn-bag.svg"]')?.closest('a');
+
+    cartButton?.addEventListener('click', (event) => {
+        event.preventDefault();
+        if (!headerCartLink || headerCartLink.querySelector('.cart-notification-dot')) return;
+
+        const dot = document.createElement('span');
+        dot.className = 'cart-notification-dot';
+        dot.setAttribute('role', 'status');
+        dot.setAttribute('aria-label', '장바구니 알림');
+        Object.assign(dot.style, {
+            position: 'absolute',
+            top: 'calc(50% - 10px)',
+            left: 'calc(50% + 8px)',
+            transform: 'translate(-25%, -75%)',
+            width: '8px',
+            height: '8px',
+            borderRadius: '50%',
+            backgroundColor: 'red',
+            pointerEvents: 'none',
+            zIndex: '401',
+        });
+        headerCartLink.style.position = 'relative';
+        headerCartLink.appendChild(dot);
     });
 
     updatePrice();

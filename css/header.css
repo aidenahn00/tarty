@@ -182,7 +182,7 @@ main {
 
 .icon-btn {
     height: 100%;
-    padding: 1rem;
+    padding: 0 1rem;
 
     display: inline-flex;
     align-items: center;

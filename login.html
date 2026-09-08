@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
-    <title>Our Story | TARTY</title>
+    <title>TARTY</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/brand.css">
+    <link rel="stylesheet" href="./css/login.css">
     <script src="./js/index.js" defer></script>
+    <script src="./js/login.js" defer></script>
 </head>
-
 <body>
 
     <header class="site-header">
@@ -66,7 +67,7 @@
                             <li><a href="./event-list.html">종료된 이벤트</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item is-expanded">
+                    <li class="nav-item">
                         <a href="./brand.html">Brand</a>
                         <button class="submenu-toggle" type="button" aria-label="Brand 하위 메뉴 펼치기" aria-expanded="false">
                             <span aria-hidden="true"></span>
@@ -140,60 +141,46 @@
         </div>
     </header>
 
-    <main class="brand-page">
-        <h1 class="visually-hidden">TARTY 브랜드 스토리</h1>
-        <section class="story-hero" aria-label="작은 타르트에서 시작된 이야기">
-            <picture>
-                <source media="(max-width: 768px)" srcset="./img/brand/banner-top-mo.jpg">
-                <source media="(max-width: 1024px)" srcset="./img/brand/banner-top-pad.jpg">
-                <img src="./img/brand/banner-top-pc.jpg" alt="딸기 타르트를 정성스럽게 만드는 TARTY 브랜드 이야기">
-            </picture>
-        </section>
-
-        <section class="making-section" aria-labelledby="making-title">
-            <h2 id="making-title">THE MAKING</h2><span class="section-dots" aria-hidden="true"></span>
-            <div class="making-grid">
-                <article class="making-card"><img src="./img/brand/tartmake-pc1.jpg" alt="노릇하게 구워진 타르트 셸">
-                    <div class="making-copy">
-                        <h3>BAKE</h3>
-                        <p>고소하고 바삭한 타르트 셸을<br>노릇하게 굽습니다</p>
-                    </div>
-                </article>
-                <article class="making-card"><img src="./img/brand/tartmake-pc2.jpg" alt="타르트에 부드러운 크림을 채우는 모습">
-                    <div class="making-copy">
-                        <h3>FILL</h3>
-                        <p>완성된 셸 안을 부드러운 크림으로<br>넉넉하게 채웁니다</p>
-                    </div>
-                </article>
-                <article class="making-card"><img src="./img/brand/tartmake-pc3.jpg" alt="타르트에 신선한 딸기를 올리는 모습">
-                    <div class="making-copy">
-                        <h3>TOPPING</h3>
-                        <p>신선한 과일과 크림들을<br>균형 있게 올립니다</p>
-                    </div>
-                </article>
+    <main class="login-page">
+        <section class="login-section" aria-labelledby="login-title">
+            <div class="login-intro">
+                <span class="login-eyebrow">YOUR SWEET LITTLE MOMENT</span>
+                <h1 id="login-title">LOGIN<span aria-hidden="true">.</span></h1>
+                <p>다시 만나 반가워요!<br>오늘도 타르티와 달콤한 순간을 함께해요.</p>
             </div>
-        </section>
-
-        <section class="moments-section" aria-labelledby="moments-title">
-            <h2 id="moments-title">SWEET MOMENTS TOGETHER</h2><span class="section-dots" aria-hidden="true"></span>
-            <div class="moments-images"><img src="./img/brand/together-left-brand-pc.jpg" alt="타르티 선물 상자를 건네는 모습"><img
-                    src="./img/brand/together-right-brand-pc.jpg" alt="차와 타르트를 함께 즐기는 모습"></div>
-            <p>나를 위한 짧은 휴식부터<br>소중한 사람과 함께하는 특별한 순간까지</p><strong>타르티는 작지만 충분한 행복을 전합니다</strong>
-        </section>
-
-        <section class="discover-section" aria-label="작은 타르트에 담은 충분한 행복">
-            <picture>
-                <source media="(max-width: 768px)" srcset="./img/brand/banner-bottom-brand-mo.jpg">
-                <source media="(max-width: 1024px)" srcset="./img/brand/banner-bottom-brand-pad.jpg">
-                <img src="./img/brand/banner-bottom-brand-pc.jpg" alt="딸기, 레몬, 블루베리, 망고, 초콜릿 타르트">
-            </picture>
-            <a class="benefit-bar" href="./product-list.html">
-                <div class="content-frame">
-                    <strong>Discover Our Menu</strong>
-                    <span>상큼한 과일부터 진한 초콜릿까지, 오늘의 기분에 맞는 타르트를 골라보세요</span>
-                    <div class="go-button">메뉴 보러가기 <span aria-hidden="true">→</span></div>
+            <div class="login-card">
+                <form id="login-form" novalidate>
+                    <div class="login-field">
+                        <label for="login-id">아이디</label>
+                        <input id="login-id" name="username" type="text" autocomplete="username" placeholder="아이디를 입력해 주세요" required aria-describedby="login-id-error">
+                        <p class="login-error" id="login-id-error"></p>
+                    </div>
+                    <div class="login-field">
+                        <label for="login-password">비밀번호</label>
+                        <div class="login-password-wrap">
+                            <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="비밀번호를 입력해 주세요" required aria-describedby="login-password-error">
+                            <button class="login-password-toggle" type="button" aria-controls="login-password" aria-pressed="false">보기</button>
+                        </div>
+                        <p class="login-error" id="login-password-error"></p>
+                    </div>
+                    <label class="login-remember"><input id="login-remember" type="checkbox"><span>아이디 저장</span></label>
+                    <button class="login-submit" type="submit">로그인 <span aria-hidden="true">→</span></button>
+                    <p class="login-status" id="login-status" role="status" aria-live="polite"></p>
+                    <div class="login-help">
+                        <button type="button" data-login-help="아이디 찾기">아이디 찾기</button>
+                        <span aria-hidden="true"></span>
+                        <button type="button" data-login-help="비밀번호 찾기">비밀번호 찾기</button>
+                    </div>
+                </form>
+                <div class="login-welcome">
+                    <span class="login-welcome-badge">WELCOME BENEFIT</span>
+                    <h2>타르티가 처음이신가요?</h2>
+                    <p>회원가입하고 첫 주문에 사용할 수 있는<br><strong>2,000원 할인 쿠폰</strong>을 만나보세요.</p>
+                    <button type="button" class="login-join" data-login-help="회원가입">회원가입 <span aria-hidden="true">↗</span></button>
                 </div>
-            </a>
+            </div>
+            <p class="login-signoff">TARTY, your sweet little moment</p>
+            <noscript><p class="login-noscript">로그인 폼을 사용하려면 JavaScript를 켜 주세요.</p></noscript>
         </section>
     </main>
 
@@ -239,7 +226,6 @@
             </div>
         </div>
     </footer>
-    
-</body>
 
+</body>
 </html>

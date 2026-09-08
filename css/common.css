@@ -270,7 +270,7 @@ html {
     color: var(--color-main);
 }
 
-.benefit-bar a {
+.benefit-bar .go-button {
     padding: 3px 14px;
     border: 1px solid var(--color-main);
     border-radius: 999px;
