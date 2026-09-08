@@ -1,0 +1,531 @@
+/* 변수 */
+:root {
+    /* 디바이스 별 글씨 크기 기준 */
+    --fs-pc: 16px;
+    --fs-pad: 14px;
+    --fs-mo: 12px;
+
+    /* 행간 */
+    --lh1: 1.2;
+    --lh2: 1.4;
+
+    /* 태그 글씨 크기 */
+    --fs-h1: 2.4414rem;
+    --fs-h2: 1.9531rem;
+    --fs-h3: 1.5625rem;
+    --fs-h4: 1.25rem;
+    --fs-body1: 1rem;
+    --fs-body2: .85rem;
+    --fs-detail: .7225rem;
+
+    /* 글씨 두께 */
+    --fw1: 400;
+    --fw2: 700;
+
+    /* 여백 */
+    --space-3x-large: 6rem;
+    --space-2x-large: 3rem;
+    --space-x-large: 2rem;
+    --space-normal: 1rem;
+    --space-x-small: .5rem;
+    --space-2x-small: .25rem;
+
+    /* 기본 컬러 */
+    --color-main-bg: #FFF8F2;
+    --color-main: #6E452C;
+    --color-point1: #FF8FA3;
+    --color-point2: #FFD966;
+    --color-point3: #BFDFFF;
+    --color-heart: #FF3F61;
+
+    /* 시멘틱 컬러 */
+    --color-success: #41E694;
+    --color-warning: #F95B6D;
+    --color-notice: #5280FF;
+
+    /* 흰색~검정 */
+    --gray-0: #FFFFFF;
+    --gray-100: #FBFBFB;
+    --gray-200: #F3F3F3;
+    --gray-300: #E7E7E7;
+    --gray-400: #D6D6D6;
+    --gray-500: #BEBEBE;
+    --gray-600: #9E9E9E;
+    --gray-700: #777777;
+    --gray-800: #494949;
+    --gray-900: #1a1a1a;
+
+    /* 메인컬러-배경 */
+    --main-background-color-0: #FFF8F2;
+    --main-background-color-100: #FEF2E7;
+    --main-background-color-200: #FDEBDB;
+    --main-background-color-300: #FAE4D1;
+    --main-background-color-400: #F7DEC7;
+    --main-background-color-500: #F3D7BF;
+    --main-background-color-600: #EDD0B7;
+    --main-background-color-700: #E5C8AE;
+    --main-background-color-800: #DDC0A6;
+    --main-background-color-900: #D4B79F;
+
+    /* 메인컬러-브라운 */
+    --main-color-0: #B1A299;
+    --main-color-100: #A68E7F;
+    --main-color-200: #9A7862;
+    --main-color-300: #8C634A;
+    --main-color-400: #7D543A;
+    --main-color-500: #6E452C;
+    --main-color-600: #5A3620;
+    --main-color-700: #422615;
+    --main-color-800: #25150B;
+    --main-color-900: #080402;
+
+    /* 분홍 */
+    --color-pink-0: #FFF5F7;
+    --color-pink-100: #FFCAD3;
+    --color-pink-200: #FEA0B1;
+    --color-pink-300: #FB7B93;
+    --color-pink-400: #F85E7A;
+    --color-pink-500: #F14767;
+    --color-pink-600: #E73657;
+    --color-pink-700: #D62949;
+    --color-pink-800: #B91F3B;
+    --color-pink-900: #871429;
+
+    /* 노랑 */
+    --color-yellow-0: #FFF8E3;
+    --color-yellow-100: #FFE38E;
+    --color-yellow-200: #FDD65E;
+    --color-yellow-300: #FBCC41;
+    --color-yellow-400: #F6C52F;
+    --color-yellow-500: #EFBC24;
+    --color-yellow-600: #E3B11C;
+    --color-yellow-700: #CFA117;
+    --color-yellow-800: #AE8712;
+    --color-yellow-900: #73590B;
+
+    /* 파랑 */
+    --color-blue-0: #EDF6FF;
+    --color-blue-100: #94C9FF;
+    --color-blue-200: #62B0FE;
+    --color-blue-300: #439FFB;
+    --color-blue-400: #3094F7;
+    --color-blue-500: #248AF1;
+    --color-blue-600: #1D81E6;
+    --color-blue-700: #1776D4;
+    --color-blue-800: #1365B6;
+    --color-blue-900: #0D4882;
+
+    /* 진분홍 */
+    --color-megenta-0: #FFF5F5;
+    --color-megenta-100: #FDC5C5;
+    --color-megenta-200: #F99898;
+    --color-megenta-300: #F27070;
+    --color-megenta-400: #E95050;
+    --color-megenta-500: #DD3838;
+    --color-megenta-600: #CD2727;
+    --color-megenta-700: #B81B1B;
+    --color-megenta-800: #A01313;
+    --color-megenta-900: #870E0E;
+
+    /* 남색 */
+    --color-navy-0: #D9E9FF;
+    --color-navy-100: #9FBEE5;
+    --color-navy-200: #6E96CA;
+    --color-navy-300: #4976B0;
+    --color-navy-400: #305E9A;
+    --color-navy-500: #204E89;
+    --color-navy-600: #16437D;
+    --color-navy-700: #103C74;
+    --color-navy-800: #0D376F;
+    --color-navy-900: #0B346B;
+
+    /* 그린 */
+    --color-green-0: #F9FFF5;
+    --color-green-100: #CDEAB7;
+    --color-green-200: #A5D481;
+    --color-green-300: #85BF58;
+    --color-green-400: #6DAD3C;
+    --color-green-500: #5C9F29;
+    --color-green-600: #51951C;
+    --color-green-700: #4A8F15;
+    --color-green-800: #458A10;
+    --color-green-900: #42870E;
+}
+
+
+
+
+html {
+    font-size: var(--fs-pc);
+    line-height: var(--lh1);
+
+    font-family: 'Pretendard', sans-serif;
+    font-weight: var(--fw1);
+}
+
+.common-frame {
+    padding: 0 var(--space-2x-large);
+}
+
+.pc {
+    display: block;
+}
+
+.pad {
+    display: none;
+}
+
+.mo {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: var(--fs-pad);
+    }
+
+    .common-frame {
+        padding: 0 var(--space-x-large);
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .pad {
+        display: block;
+    }
+
+    .mo {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: var(--fs-mo);
+    }
+
+    .common-frame {
+        padding: 0 var(--space-normal);
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .pad {
+        display: none;
+    }
+
+    .mo {
+        display: block;
+    }
+}
+
+
+
+
+@media (max-width: 860px) {
+    /* 띠 배너 */
+    .banner-line .common-frame span,
+    .banner-line .common-frame p {
+        display: none;
+    }
+
+}
+
+
+
+/* 공통 링크 배너 스타일 */
+.benefit-bar {
+    background: #fdeff2;
+    font-size: var(--fs-body1);
+    color: var(--color-main);
+    border-top: 1px solid rgba(0, 0, 0, 0.03);
+
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background: var(--color-pink-0);
+    color: var(--color-main);
+    box-sizing: border-box;
+}
+
+.benefit-bar .content-frame {
+    display: grid;
+    grid-template-columns: 230px 1fr auto;
+    align-items: center;
+    gap: 0;
+
+    max-width: 1280px;
+}
+
+.benefit-bar strong {
+    font-size: var(--fs-h4);
+    font-weight: var(--fw2);
+}
+
+.benefit-bar span {
+    color: var(--color-main);
+}
+
+.benefit-bar a {
+    padding: 3px 14px;
+    border: 1px solid var(--color-main);
+    border-radius: 999px;
+    font-weight: var(--fw2);
+}
+
+@media (max-width: 1024px) {
+    .benefit-bar {
+        height: 60px;
+    }
+
+    .benefit-bar .content-frame {
+        grid-template-columns: 200px 1fr auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefit-bar {
+        height: auto;
+    }
+
+    .benefit-bar .content-frame {
+        grid-template-columns: 1fr auto;
+        gap: 5px 16px;
+    }
+
+    .benefit-bar span {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    .benefit-bar a {
+        grid-column: 2;
+        grid-row: 1;
+    }    
+    .benefit-bar {
+        height: 52px;
+        padding: 0;
+    }
+
+    .benefit-bar .content-frame {
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+    }
+
+    .benefit-bar strong {
+        display: none;
+    }
+
+    .benefit-bar span {
+        grid-column: 1;
+        grid-row: 1;
+        max-width: 220px;
+        line-height: var(--lh2);
+    }
+
+    .benefit-bar a {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}
+
+
+
+    
+/* 공통 푸터 스타일 */
+.site-footer {
+    background: var(--gray-900);
+    color: var(--gray-0);
+
+    padding-bottom: env(safe-area-inset-bottom);
+
+    box-sizing: border-box;
+}
+
+.footer-inner {
+    width: min(1064px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.footer-top {
+    border-bottom: 1px solid var(--gray-800);
+}
+
+.footer-top .footer-inner {
+    min-height: 108px;
+    display: grid;
+    grid-template-columns: 210px 1fr auto;
+    align-items: center;
+    gap: 42px;
+}
+
+.footer-logo,
+.footer-logo img {
+    display: block;
+}
+
+.footer-logo img {
+    width: 156px;
+    height: auto;
+}
+
+.footer-nav ul,
+.footer-social {
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav ul {
+    gap: 34px;
+}
+
+.footer-nav a {
+    font-size: var(--fs-h4);
+    font-weight: var(--fw2);
+    white-space: nowrap;
+}
+
+.footer-social {
+    gap: 16px;
+}
+
+.footer-social a,
+.footer-social img {
+    display: block;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+
+.footer-bottom .footer-inner {
+    min-height: 278px;
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    gap: 68px;
+    padding: 66px 0 50px;
+    box-sizing: border-box;
+}
+
+.footer-contact p {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0 0 8px;
+    font-size: var(--fs-h4);
+    font-weight: var(--fw2);
+}
+
+.footer-contact strong {
+    color: var(--color-point1);
+    font-size: var(--fs-h2);
+    letter-spacing: .5px;
+}
+
+.footer-company {
+    font-size: var(--fs-h4);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer-company>address {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer-company p {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-company .company-row+.company-row {
+    margin-top: 14px;
+}
+
+.footer-company b {
+    display: inline-block;
+    font-weight: var(--fw2);
+}
+
+.footer-company .company-row {
+    display: flex;
+}
+
+.footer-company .company-row>div {
+    margin-right: 3rem;
+}
+.footer-company .company-row>div:nth-of-type(3) {
+    margin-right: 8px;
+}
+.footer-company .company-row>div:nth-of-type(4) {
+    margin-right: 0;
+}
+
+@media (max-width:1076px) {
+    .footer-top .footer-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 4rem 0;
+    }
+
+    .footer-nav {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    .footer-nav ul {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .footer-bottom .footer-inner {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 4rem 0;
+    }
+}
+
+@media (max-width:768px) {
+    .footer-nav {
+        width: 100%;
+    }
+    .footer-nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(50px, 1fr));
+        gap: 24px 12px;
+    }
+}
+
+@media (max-width:568px) {
+    .footer-company .company-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4px;
+    }
+}
+
+@media (max-width:520px) {
+    .footer-inner {
+        width: calc(100% - 32px);
+    }
+
+    .footer-logo img {
+        width: 132px;
+    }
+
+    .footer-company b {
+        min-width: 90px;
+    }
+}
