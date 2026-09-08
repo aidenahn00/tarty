@@ -236,11 +236,12 @@ button {
 }
 
 .product-tabs {
-    width: min(520px, calc(100% - 40px));
-    margin: 96px auto 0;
-    padding-bottom: 35px;
+    margin: 96px 0 0;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--gray-300);
     display: flex;
-    justify-content: space-between;
+    gap: 4rem;
+    justify-content: center;
     color: var(--gray-700);
     font-size: var(--fs-body1);
 }
