@@ -27,7 +27,7 @@ body {
     position: relative;
     width: min(1824px, calc(100% - 96px));
     margin: 0 auto;
-    padding: 6rem 0;
+    padding: 6rem 3rem;
 }
 
 .event-tabs {
@@ -81,6 +81,8 @@ body {
     display: block;
     object-fit: cover;
     transition: transform .3s ease, box-shadow .3s ease;
+
+    border-radius: .5rem;
 }
 
 .event-card:hover>img,
@@ -135,6 +137,12 @@ body {
 }
 
 @media (max-width: 1024px) {
+
+    .event-catalog {
+        width: auto;
+        padding: 6rem 2rem;
+    }
+
     .event-page {
         margin-top: 64px;
     }
@@ -145,7 +153,6 @@ body {
 
     .event-tabs {
         top: -31px;
-        width: 62vw;
         height: 62px;
     }
 
@@ -173,7 +180,6 @@ body {
 @media (max-width: 768px) {
     .event-tabs {
         top: -23px;
-        width: calc(100% - 16px);
         height: 46px;
         padding: 3px;
     }

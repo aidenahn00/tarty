@@ -70,8 +70,7 @@ body {
 }
 
 .making-card {
-    min-height: 690px;
-    padding: 34px 34px 80px;
+    padding: 34px 34px 164px;
     border-radius: 220px;
     background: var(--color-main-bg);
     box-sizing: border-box;
@@ -163,7 +162,6 @@ body {
     }
 
     .making-card {
-        min-height: 405px;
         padding: 16px 16px 44px;
         border-radius: 150px;
     }
@@ -220,8 +218,6 @@ body {
 
     .making-card {
         width: 100%;
-        min-height: 190px;
-        height: 190px;
         margin: 0;
         padding: 10px;
         display: flex;

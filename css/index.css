@@ -354,7 +354,7 @@
     }
 
     .event-grid img {
-        border-radius: 6px;
+        border-radius: .5rem;
         transition: transform .25s ease;
     }
 
@@ -591,10 +591,6 @@
             font-weight: var(--fw2);
             white-space: nowrap;
             scroll-snap-align: end;
-        }
-
-        .event-grid img {
-            border-radius: 8px;
         }
 
         .event-more {

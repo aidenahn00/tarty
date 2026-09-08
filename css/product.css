@@ -55,7 +55,7 @@
 
 .product-heading {
     position: relative;
-    min-height: 220px;
+    margin-bottom: 6rem;
 }
 
 .product-badge {
@@ -69,7 +69,7 @@
 }
 
 .product-heading h1 {
-    margin: 20px 50px 10px 0;
+    margin: 1rem 0;
     font-size: var(--fs-h1);
     font-weight: var(--fw1);
 }
@@ -274,10 +274,6 @@
         height: 60px;
     }
 
-    .product-heading {
-        min-height: 200px;
-    }
-
     .product-meta>div:nth-child(1),
     .product-meta>div:nth-child(2) {
         min-height: 104px;
@@ -332,11 +328,7 @@
     }
 
     .product-info {
-        padding-top: 36px;
-    }
-
-    .product-heading {
-        min-height: 146px;
+        padding-top: 3rem;
     }
 
     .product-heading h1 {
