@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             width: '8px',
             height: '8px',
             borderRadius: '50%',
-            backgroundColor: 'red',
+            backgroundColor: '#FF3F61',
             pointerEvents: 'none',
             zIndex: '401',
         });

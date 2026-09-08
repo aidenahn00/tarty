@@ -154,7 +154,7 @@ main {
 }
 
 .main-nav>ul>li:nth-child(4) {
-    --submenu-offset: 148px;
+    --submenu-offset: 159px;
 }
 
 .main-nav>ul>li:hover>a,

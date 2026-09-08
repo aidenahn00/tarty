@@ -139,6 +139,10 @@ body {
         margin-top: 64px;
     }
 
+    .event-card-info h2 {
+        font-size: var(--fs-h4);
+    }
+
     .event-tabs {
         top: -31px;
         width: 62vw;
