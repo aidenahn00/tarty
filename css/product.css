@@ -65,10 +65,6 @@ button {
     object-fit: cover;
 }
 
-.product-info {
-    padding-top: 2px;
-}
-
 .product-heading {
     position: relative;
     min-height: 220px;
