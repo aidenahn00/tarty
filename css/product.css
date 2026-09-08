@@ -11,7 +11,6 @@ button {
 
 .product-page {
     padding: 6rem 2rem 0;
-    border-bottom: 1px solid var(--gray-300);
     margin-bottom: 4rem;
 }
 
@@ -270,11 +269,6 @@ button {
     .product-view {
         grid-template-columns: minmax(0, 45.1%) minmax(0, 1fr);
         gap: 5.5%;
-    }
-
-    .product-detail-images,
-    .product-detail-images img {
-        width: 100%;
     }
 
     .thumbnail-list {

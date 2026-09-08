@@ -5,12 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.menu-card');
     const emptyMessage = document.querySelector('.empty-message');
 
-    productImages.forEach((image) => {
-        image.dataset.tabletSrc = image.dataset.padSrc;
-        const mobileSource = image.dataset.pcSrc?.replace(/\.png$/, '-2.png');
-        if (mobileSource && !mobileSource.endsWith('tart15-2.png')) image.dataset.mobileSrc = mobileSource;
-    });
-
     const updateMobileImages = () => {
         productImages.forEach((image) => {
             if (mobileQuery.matches && image.dataset.mobileSrc) {
