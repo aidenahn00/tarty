@@ -1,0 +1,226 @@
+body {
+    color: var(--color-main);
+    background: #fff;
+}
+
+.menu-page {
+    margin-top: 100px;
+}
+
+.menu-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-hero picture,
+.menu-hero picture img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.menu-hero picture img {
+    object-fit: cover;
+}
+
+.menu-catalog {
+    position: relative;
+    width: min(1650px, calc(100% - 96px));
+    margin: 0 auto;
+    padding: 145px 0 180px;
+}
+
+.size-tabs {
+    position: absolute;
+    z-index: 2;
+    top: -35px;
+    left: 50%;
+    width: min(900px, 66vw);
+    height: 70px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transform: translateX(-50%);
+    border-radius: 999px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(87, 61, 48, .12);
+    box-sizing: border-box;
+}
+
+.size-tabs button {
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--gray-500);
+    font-size: var(--fs-h4);
+    cursor: pointer;
+    transition: color .2s, border-color .2s, background .2s;
+}
+
+.size-tabs button.is-active {
+    border-color: var(--gray-300);
+    color: var(--color-point1);
+    font-weight: var(--fw2);
+    background: #fff;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    column-gap: clamp(26px, 3vw, 58px);
+    row-gap: 135px;
+}
+
+.menu-card {
+    position: relative;
+    min-width: 0;
+    display: block;
+    text-align: center;
+    color: var(--color-main);
+}
+
+.menu-card>img {
+    width: 100%;
+    aspect-ratio: 1;
+    display: block;
+    object-fit: contain;
+    transition: transform .3s ease;
+}
+
+.menu-card:hover>img,
+.menu-card:focus-visible>img {
+    transform: translateY(-6px) scale(1.2);
+}
+
+.menu-badge {
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    left: 0;
+    padding: 4px 8px;
+    border-radius: 999px;
+    color: #fff;
+    font-size: var(--fs-body1);
+    font-weight: var(--fw2);
+}
+
+.menu-badge.best {
+    background: var(--color-point2);
+}
+
+.menu-badge.new {
+    background: var(--color-point3);
+}
+
+.menu-badge.seasonal {
+    background: var(--color-point1);
+}
+
+.card-copy {
+    margin-top: 23px;
+    padding-top: 17px;
+    border-top: 1px solid var(--gray-300);
+}
+
+.card-copy h3 {
+    overflow: hidden;
+    font-size: var(--fs-h3);
+    font-weight: var(--fw2);
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card-copy p {
+    color: var(--gray-600);
+    font-size: var(--fs-body2);
+    line-height: var(--lh2);
+}
+
+.empty-message {
+    padding: 90px 0;
+    color: var(--gray-600);
+    font-size: var(--fs-h4);
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .menu-page {
+        margin-top: 64px;
+    }
+
+    .menu-catalog {
+        width: calc(100% - 104px);
+        padding: 96px 0 130px;
+    }
+
+    .size-tabs {
+        top: -31px;
+        width: 62vw;
+        height: 62px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 40px;
+        row-gap: 138px;
+    }
+
+    .menu-badge {
+        top: -14px;
+        padding: 3px 7px;
+    }
+
+    .card-copy {
+        margin-top: 19px;
+        padding-top: 16px;
+    }
+
+    .card-copy h3 {
+        font-size: var(--fs-h4);
+        white-space: normal;
+    }
+
+    .card-copy p {
+        font-size: var(--fs-detail);
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-catalog {
+        width: calc(100% - 40px);
+        padding: 92px 0 100px;
+        overflow: visible;
+    }
+
+    .size-tabs {
+        top: -23px;
+        width: calc(100% - 16px);
+        height: 46px;
+        padding: 3px;
+    }
+
+    .product-grid {
+        min-width: 0;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 38px;
+        row-gap: 84px;
+    }
+
+    .menu-badge {
+        top: -17px;
+        padding: 3px 7px;
+    }
+
+    .card-copy {
+        margin-top: 14px;
+        padding-top: 12px;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .product-grid {
+        column-gap: 14px;
+    }
+}

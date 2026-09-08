@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+    <title>딸기 바닐라 크림 타르트 | TARTY</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <script src="./js/index.js" defer></script>
+    <script src="./js/product.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="main-navigation"
+                aria-expanded="false">
+                <img src="./img/icn-menu.svg" alt="">
+            </button>
+
+            <a href="./index.html" class="logo" aria-label="TARTY 홈">
+                <img src="./img/logo.svg" alt="TARTY">
+            </a>
+
+            <nav class="main-nav" id="main-navigation" aria-label="주요 메뉴">
+                <div class="sidebar-header">
+                    <button class="sidebar-close" type="button" aria-label="메뉴 닫기">
+                        <img src="./img/icn-close.svg" alt="메뉴 닫기">
+                    </button>
+                </div>
+                <ul>
+                    <li class="nav-item">
+                        <a href="./index.html">Online Shop</a>
+                        <button class="submenu-toggle" type="button" aria-label="Online Shop 하위 메뉴 접기"
+                            aria-expanded="true">
+                            <span aria-hidden="true"></span>
+                        </button>
+                        <ul class="submenu">
+                            <li><a href="./index.html#best-title">인기상품</a></li>
+                            <li><a href="./index.html#event-title">이벤트</a></li>
+                            <li><a href="./index.html#insta-title">후기</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item is-expanded">
+                        <a href="./product-list.html">Menu</a>
+                        <button class="submenu-toggle" type="button" aria-label="Menu 하위 메뉴 펼치기" aria-expanded="false">
+                            <span aria-hidden="true"></span>
+                        </button>
+                        <ul class="submenu">
+                            <li><a href="./product-list.html">미니</a></li>
+                            <li><a href="#">미디움</a></li>
+                            <li><a href="#">빅</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./event-list.html">Event</a>
+                        <button class="submenu-toggle" type="button" aria-label="Event 하위 메뉴 펼치기" aria-expanded="false">
+                            <span aria-hidden="true"></span>
+                        </button>
+                        <ul class="submenu">
+                            <li><a href="./event-list.html">진행 중 이벤트</a></li>
+                            <li><a href="#">종료된 이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./brand.html">Brand</a>
+                        <button class="submenu-toggle" type="button" aria-label="Brand 하위 메뉴 펼치기" aria-expanded="false">
+                            <span aria-hidden="true"></span>
+                        </button>
+                        <ul class="submenu">
+                            <li><a href="./brand.html">스토리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-backdrop" type="button" aria-label="메뉴 닫기" tabindex="-1"></button>
+
+            <aside class="account-panel" id="account-panel" aria-label="회원 메뉴" inert>
+                <div class="account-panel-header">
+                    <button class="account-panel-close" type="button" aria-label="회원 메뉴 닫기">
+                        <img src="./img/icn-close.svg" alt="회원 메뉴 닫기">
+                    </button>
+                </div>
+                <ul>
+                    <li>                    
+                        <a href="#">
+                            <img src="./img/icn-login.svg" alt="">
+                            <span>로그인</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icn-create-account.svg" alt="">
+                            <span>회원가입</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icn-search.svg" alt="">
+                            <span>검색</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icn-bag.svg" alt="">
+                            <span>장바구니</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icn-profile.svg" alt="">
+                            <span>프로필</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <div class="header-actions">
+                <button class="icon-btn" type="button" aria-label="로그인">
+                    <img src="./img/icn-login.svg" alt="">
+                </button>
+                <button class="icon-btn" type="button" aria-label="회원가입">
+                    <img src="./img/icn-create-account.svg" alt="">
+                </button>
+                <button class="icon-btn" type="button" aria-label="검색">
+                    <img src="./img/icn-search.svg" alt="">
+                </button>
+                <button class="icon-btn" type="button" aria-label="장바구니">
+                    <img src="./img/icn-bag.svg" alt="">
+                </button>
+                <button class="icon-btn profile-action" type="button" aria-label="회원 메뉴 열기"
+                    aria-controls="account-panel" aria-expanded="false">
+                    <img src="./img/icn-profile.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="product-page">
+        <section class="product-view" aria-labelledby="product-title">
+            <div class="product-gallery">
+                <div class="main-image-wrap">
+                    <img id="product-main-image" src="./img/buy/tart-detail-pc1.jpg" alt="딸기 바닐라 크림 타르트">
+                </div>
+                <div class="thumbnail-list" aria-label="상품 이미지 선택">
+                    <button class="thumbnail is-active" type="button" data-image="./img/buy/tart-detail-pc1.jpg"
+                        aria-label="상품 이미지 1 선택">
+                        <img src="./img/buy/tart-detail-pc1.jpg" alt="">
+                    </button>
+                    <button class="thumbnail" type="button" data-image="./img/buy/tart-detail-pc2.jpg"
+                        aria-label="상품 이미지 2 선택">
+                        <img src="./img/buy/tart-detail-pc2.jpg" alt="">
+                    </button>
+                    <button class="thumbnail" type="button" data-image="./img/buy/tart-detail-pc3.jpg"
+                        aria-label="상품 이미지 3 선택">
+                        <img src="./img/buy/tart-detail-pc3.jpg" alt="">
+                    </button>
+                    <button class="thumbnail" type="button" data-image="./img/buy/tart-detail-pc4.jpg"
+                        aria-label="상품 이미지 4 선택">
+                        <img src="./img/buy/tart-detail-pc4.jpg" alt="">
+                    </button>
+                    <button class="thumbnail" type="button" data-image="./img/buy/tart-detail-pc5.jpg"
+                        aria-label="상품 이미지 5 선택">
+                        <img src="./img/buy/tart-detail-pc5.jpg" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <div class="product-heading">
+                    <span class="product-badge">BEST</span>
+                    <h1 id="product-title">딸기 바닐라 크림 타르트</h1>
+                    <strong class="product-price">4,500원</strong>
+                    <button class="share-button" type="button" aria-label="상품 공유하기">
+                        <img src="./img/icn-share.svg" alt="">
+                    </button>
+                </div>
+
+                <dl class="product-meta">
+                    <div>
+                        <dt>적립</dt>
+                        <dd><strong>567</strong>&nbsp; 포인트 적립예정</dd>
+                    </div>
+                    <div>
+                        <dt>배송</dt>
+                        <dd>냉장 택배 · 기본 배송비 3,500원<br>30,000원 이상 구매 시 무료배송</dd>
+                    </div>
+                    <div class="quantity-row">
+                        <dt>수량</dt>
+                        <dd>
+                            <div class="quantity-control" aria-label="상품 수량">
+                                <button type="button" class="quantity-minus" aria-label="수량 줄이기"><img src="./img/icn-minus.svg" alt="수량 빼기"></button>
+                                <output class="quantity-value" aria-live="polite">1</output>
+                                <button type="button" class="quantity-plus" aria-label="수량 늘리기"><img src="./img/icn-plus.svg" alt="수량 더하기"></button>
+                            </div>
+                            <span class="line-price">4,500원</span>
+                        </dd>
+                    </div>
+                </dl>
+
+                <div class="product-total">
+                    <span>총 상품금액</span>
+                    <strong class="total-price">4,500원</strong>
+                </div>
+
+                <div class="product-actions">
+                    <button class="buy-button" type="button">구매하기</button>
+                    <button class="cart-button" type="button">장바구니</button>
+                    <button class="favorite-button" type="button" aria-label="찜하기" aria-pressed="false">
+                        <img src="./img/icn-heart.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <nav class="product-tabs" aria-label="상품 정보 메뉴">
+            <a class="is-active" href="#detail">상세정보</a>
+            <span aria-hidden="true">/</span>
+            <a href="#reviews">구매평 (0)</a>
+            <span aria-hidden="true">/</span>
+            <a href="#questions">Q&amp;A (0)</a>
+        </nav>
+    </main>
+
+    <section class="product-detail-images" id="detail" aria-label="상품 상세정보">
+        <img src="./img/buy/detail-buy-pc1.jpg" alt="딸기 바닐라 크림 타르트 상세정보 1">
+        <img src="./img/buy/detail-buy-pc2.jpg" alt="딸기 바닐라 크림 타르트 상세정보 2">
+        <img src="./img/buy/detail-buy-pc3.jpg" alt="딸기 바닐라 크림 타르트 상세정보 3">
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-inner"><a href="./index.html" class="footer-logo" aria-label="TARTY 홈"><img
+                        src="./img/logo-footer.svg" alt="TARTY"></a>
+                <nav class="footer-nav" aria-label="푸터 메뉴">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">가맹절차</a></li>
+                        <li><a href="#">사이트이용약관</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">고객상담</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-social" aria-label="소셜 미디어"><a href="#" aria-label="인스타그램"><img
+                                src="./img/icn-insta.svg" alt="인스타그램 아이콘"></a><a href="#" aria-label="유튜브"><img
+                                src="./img/icn-youtube.svg" alt="유튜브 아이콘"></a><a href="#" aria-label="페이스북"><img
+                                src="./img/icn-facebook.svg" alt="페이스북 아이콘"></a></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-inner">
+                <div class="footer-contact">
+                    <p><span>가맹문의</span><strong>1661-1234</strong></p>
+                    <p><span>고객센터</span><strong>1644-4321</strong></p>
+                </div>
+                <div class="footer-company">
+                    <address>
+                        <p><b>TARTY 본사</b> 서울특별시 성동구 성수이로 00, 타르티빌딩 3층</p>
+                        <p><b>TARTY 서울숲점</b> 서울특별시 성동구 서울숲길 00, 1층</p>
+                    </address>
+                    <div class="company-row">
+                        <div>(주)타르티엔티</div> 
+                        <div>사업자번호 123-45-6789</div>
+                        <div>대표이사</div>
+                        <div>김하경 · 이선영 · 안정현</div>
+                    </div>
+                    <p class="copyright">Copyright © TARTY. All right Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
