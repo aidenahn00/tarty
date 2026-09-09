@@ -113,7 +113,7 @@
         color: var(--color-main);
     }
 
-    .insta-info>img {
+    .insta-info img {
         width: 24px;
         height: 24px;
         margin-bottom: 1rem;
@@ -312,7 +312,7 @@
     }
     
     @media (max-width: 1024px) {
-        
+
         .best-menu .item h3 {
             font-size: var(--fs-h4);
             padding-top: 2rem;
@@ -478,7 +478,7 @@
             width: 100%;
         }
 
-        .insta-info>img {
+        .insta-info img {
             width: 20px;
             height: 20px;
         }

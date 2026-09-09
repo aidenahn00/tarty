@@ -44,7 +44,7 @@ body {
     padding-top: 2rem;
 }
 
-.menu-card>img {
+.menu-card img {
     width: 100%;
     aspect-ratio: 1;
     display: block;
@@ -52,8 +52,8 @@ body {
     transition: transform .3s ease;
 }
 
-.menu-card:hover>img,
-.menu-card:focus-visible>img {
+.menu-card:hover img,
+.menu-card:focus-visible img {
     transform: translateY(-6px) scale(1.2);
 }
 

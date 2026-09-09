@@ -42,7 +42,7 @@ body {
     display: block;
 }
 
-.event-card>img {
+.event-card img {
     width: 100%;
     aspect-ratio: 600 / 250;
     display: block;
@@ -52,8 +52,8 @@ body {
     border-radius: .5rem;
 }
 
-.event-card:hover>img,
-.event-card:focus-visible>img {
+.event-card:hover img,
+.event-card:focus-visible img {
     transform: translateY(-4px);
     box-shadow: 0 14px 28px rgba(72, 47, 33, .12);
 }
@@ -123,7 +123,7 @@ body {
         gap: 78px 28px;
     }
 
-    .event-card>img {
+    .event-card img {
         height: auto;
         aspect-ratio: 477 / 196;
         object-fit: contain;
@@ -146,7 +146,7 @@ body {
         row-gap: 58px;
     }
 
-    .event-card>img {
+    .event-card img {
         height: auto;
         aspect-ratio: 171 / 70;
         object-fit: contain;
