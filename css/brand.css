@@ -267,3 +267,19 @@ body {
         width: calc(100% - 40px);
     }
 }
+
+@media (max-width: 414px) {
+    .making-card p {
+        padding: 0 20px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    .making-card h3 {
+        font-size: var(--fs-h4);
+    }
+    .making-card p {
+        padding: 0 12px;
+    }
+}
