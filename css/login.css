@@ -308,7 +308,7 @@
     .login-password-wrap input {
         padding-right: 0;
     }
-    .login-page button {
+    .login-password-wrap button {
         display: none;
     }
 }

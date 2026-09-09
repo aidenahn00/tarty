@@ -332,6 +332,16 @@
         display: block;
     }
 
+    .product-detail-images {
+        width: 100%;
+        padding: 0 2rem;
+        box-sizing: border-box;
+    }
+    .product-detail-images img {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     .thumbnail-list {
         margin-top: 12px;
         gap: 6px;
