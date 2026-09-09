@@ -38,10 +38,16 @@
 
 .popup-close {
     position: absolute;
-    top: 2.8%;
-    right: 3.3%;
-    width: 5%;
+    top: 0;
+    right: 0;
     aspect-ratio: 1;
+    height: 64px;
+    padding-top: 2.8%;
+    padding-right: 3.3%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    box-sizing: border-box;
 }
 
 .popup>picture,
