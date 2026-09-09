@@ -39,12 +39,12 @@ body {
 }
 
 .making-section {
-    padding: 6rem 3rem;
+    padding: 6rem 3rem 3rem;
 }
 
 .making-section h2,
 .moments-section h2 {
-    font-size: var(--fs-h2);
+    font-size: var(--fs-h1);
     font-weight: var(--fw2);
 }
 
@@ -144,6 +144,10 @@ body {
     }
 
     .making-section {
+        padding: 6rem 2rem 2rem;
+    }
+
+    .moments-section {
         padding: 6rem 2rem;
     }
 

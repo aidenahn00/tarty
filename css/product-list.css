@@ -25,9 +25,8 @@ body {
 
 .menu-catalog {
     position: relative;
-    width: min(1650px, calc(100% - 96px));
     margin: 0 auto;
-    padding: 145px 0 180px;
+    padding: 6rem 4rem;
 }
 
 .product-grid {
@@ -41,8 +40,8 @@ body {
     position: relative;
     min-width: 0;
     display: block;
-    text-align: center;
     color: var(--color-main);
+    padding-top: 2rem;
 }
 
 .menu-card>img {
@@ -61,7 +60,7 @@ body {
 .menu-badge {
     position: absolute;
     z-index: 1;
-    top: -20px;
+    top: 0;
     left: 0;
     padding: 4px 8px;
     border-radius: 999px;
@@ -83,9 +82,9 @@ body {
 }
 
 .card-copy {
-    margin-top: 23px;
-    padding-top: 17px;
-    border-top: 1px solid var(--gray-300);
+    padding-top: 1.4rem;
+    border-top: 2px solid var(--gray-300);
+    text-align: center;
 }
 
 .card-copy h3 {
@@ -101,6 +100,7 @@ body {
     color: var(--gray-600);
     font-size: var(--fs-body2);
     line-height: var(--lh2);
+    margin-top: .25rem;
 }
 
 .empty-message {
@@ -116,8 +116,7 @@ body {
     }
 
     .menu-catalog {
-        width: calc(100% - 104px);
-        padding: 96px 0 130px;
+        padding: 6rem 2rem;
     }
 
     .product-grid {
@@ -127,47 +126,34 @@ body {
     }
 
     .menu-badge {
-        top: -14px;
         padding: 3px 7px;
-    }
-
-    .card-copy {
-        margin-top: 19px;
-        padding-top: 16px;
     }
 
     .card-copy h3 {
         font-size: var(--fs-h4);
         white-space: normal;
     }
-
+    
     .card-copy p {
         font-size: var(--fs-detail);
     }
+
 }
 
 @media (max-width: 768px) {
     .menu-catalog {
-        width: calc(100% - 40px);
-        padding: 92px 0 100px;
         overflow: visible;
     }
 
     .product-grid {
         min-width: 0;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        column-gap: 38px;
-        row-gap: 84px;
-    }
-
-    .menu-badge {
-        top: -17px;
-        padding: 3px 7px;
+        column-gap: 4rem;
+        row-gap: 5rem;
     }
 
     .card-copy {
-        margin-top: 14px;
-        padding-top: 12px;
+        padding-top: 2rem;
     }
 
 }

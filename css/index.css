@@ -41,11 +41,12 @@
     }
 
     .best-menu .items {
-        display: flex;
-        justify-content: center;
-        gap: 72px;
-        max-width: 1100px;
+        max-width: 1000px;
         margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 
     .best-menu figure {
@@ -126,7 +127,7 @@
 
     .insta-info p {
         margin-bottom: 2rem;
-        font-size: var(--fs-h3);
+        font-size: var(--fs-h4);
         line-height: var(--lh2);
     }
 
@@ -177,7 +178,7 @@
 
         .best-menu .items {
             flex-direction: column;
-            gap: 28px;
+            gap: 4rem;
         }
 
         .events {
@@ -238,7 +239,7 @@
 
     .best-menu h2 {
         color: var(--color-main);
-        font-size: var(--fs-h2);
+        font-size: var(--fs-h1);
         font-weight: var(--fw2);
 
         margin-bottom: 3rem;
@@ -247,29 +248,29 @@
         text-align: center;
     }
 
-    .best-menu .items {
-        max-width: 1120px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(3, 291px);
-        justify-content: space-between;
-        gap: 50px;
-    }
-
     .best-menu .item {
-        text-align: center;
+        position: relative;
+        padding-top: 2rem;
     }
 
     .best-menu .badge {
-        margin: 0 0 1rem;
-        padding: 4px 8px;
         background: var(--color-point2);
         color: #fff;
-        font-size: var(--fs-body1);
-        line-height: var(--lh2);
+
         margin-right: auto;
         display: block;
         width: fit-content;
+
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+
+        padding: 4px 8px;
+
+        border-radius: 999px;
+        font-size: var(--fs-body1);
+        font-weight: var(--fw2);
     }
 
     .best-menu figure {
@@ -292,9 +293,12 @@
         transform: scale(1.2);
     }
 
+    .best-menu .item .copy {
+        text-align: center;
+    }
+
     .best-menu .item h3 {
-        margin: 1rem 0 0;
-        padding-top: 1rem;
+        padding-top: 1.4rem;
         border-top: 2px solid var(--gray-300);
         font-size: var(--fs-h3);
         font-weight: var(--fw2);
@@ -302,9 +306,25 @@
     }
 
     .best-menu .item p {
-        margin-top: .5rem;
+        margin-top: .25rem;
         color: var(--gray-600);
         font-size: var(--fs-body2);
+    }
+    
+    @media (max-width: 1024px) {
+        
+        .best-menu .item h3 {
+            font-size: var(--fs-h4);
+            padding-top: 2rem;
+        }
+        .best-menu .item p {
+            font-size: var(--fs-detail);
+        }
+
+        .best-menu .badge {
+            padding: 3px 7px;
+        }
+
     }
 
     .middle-banner {
@@ -336,7 +356,7 @@
 
     .event-section h2 {
         color: var(--color-main);
-        font-size: var(--fs-h2);
+        font-size: var(--fs-h1);
         font-weight: var(--fw2);
 
         margin-bottom: 3rem;
@@ -541,7 +561,6 @@
         }
 
         .best-menu .items {
-            max-width: 390px;
             grid-template-columns: repeat(2, 1fr);
             justify-content: center;
             justify-items: center;

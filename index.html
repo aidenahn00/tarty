@@ -12,10 +12,25 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/popup.css">
     <script src="./js/index.js" defer></script>
+    <script src="./js/popup.js" defer></script>
 </head>
 
 <body>
+    <div class="modal"></div>
+    <div class="popup">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./img/popup-img.jpg">
+            <source media="(max-width: 1024px)" srcset="./img/popup-img.jpg">
+            <img src="./img/popup-img.jpg" alt="매일의 기분을 달콤하게">
+        </picture>
+        <div class="popup-ctl">
+            <a href="./login.html">회원가입하고 쿠폰 받기</a>
+            <span>이미 회원이신가요? <a href="./login.html">로그인하기</a></span>
+        </div>
+        <a href="#" class="popup-close"><img src="./img/icn-close-popup.svg" alt="팝업창 닫기"></a>        
+    </div>
 
     <header class="site-header">
         <div class="header-inner">
@@ -146,20 +161,32 @@
         <section class="swiper hero-slider" aria-label="메인 프로모션">
             <div class="swiper-wrapper">
                 <div class="swiper-slide hero-first">
-                    <img src="./img/main/herobanner-main-pc1.jpg" data-pad-src="./img/main/herobanner-main-pad1.jpg"
-                        data-mo-src="./img/main/herobanner-main-mo1.jpg" alt="매일의 기분을 달콤하게">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./img/main/herobanner-main-mo1.jpg">
+                        <source media="(max-width: 1024px)" srcset="./img/main/herobanner-main-pad1.jpg">
+                        <img src="./img/main/herobanner-main-pc1.jpg" alt="매일의 기분을 달콤하게">
+                    </picture>
                 </div>
                 <div class="swiper-slide">
-                    <img src="./img/main/herobanner-main-pc2.jpg" data-pad-src="./img/main/herobanner-main-pad2.jpg"
-                        data-mo-src="./img/main/herobanner-main-mo2.jpg" alt="타르티 프로모션">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./img/main/herobanner-main-mo2.jpg">
+                        <source media="(max-width: 1024px)" srcset="./img/main/herobanner-main-pad2.jpg">
+                        <img src="./img/main/herobanner-main-pc2.jpg" alt="타르티 프로모션">
+                    </picture>
                 </div>
                 <div class="swiper-slide">
-                    <img src="./img/main/herobanner-main-pc3.jpg" data-pad-src="./img/main/herobanner-main-pad3.jpg"
-                        data-mo-src="./img/main/herobanner-main-mo3.jpg" alt="타르티 시즌 메뉴">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./img/main/herobanner-main-mo3.jpg">
+                        <source media="(max-width: 1024px)" srcset="./img/main/herobanner-main-pad3.jpg">
+                        <img src="./img/main/herobanner-main-pc3.jpg" alt="타르티 시즌 메뉴">
+                    </picture>
                 </div>
                 <div class="swiper-slide">
-                    <img src="./img/main/herobanner-main-pc4.jpg" data-pad-src="./img/main/herobanner-main-pad4.jpg"
-                        data-mo-src="./img/main/herobanner-main-mo4.jpg" alt="타르티의 특별한 순간">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./img/main/herobanner-main-mo4.jpg">
+                        <source media="(max-width: 1024px)" srcset="./img/main/herobanner-main-pad4.jpg">
+                        <img src="./img/main/herobanner-main-pc4.jpg" alt="타르티의 특별한 순간">
+                    </picture>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -178,46 +205,82 @@
             <div class="items">
                 <a class="item" href="./product.html" aria-label="딸기 바닐라 크림 타르트 상품 상세 보기">
                     <span class="badge">BEST</span>
-                    <figure><img src="./img/productlist/tart-s-1.png" data-pad-src="./img/productlist/tart-s-1.png"
-                            data-mo-src="./img/productlist/tart-s-1.png" alt="딸기 바닐라 크림 타르트"></figure>
-                    <h3>딸기 바닐라 크림 타르트</h3>
-                    <p>Strawberry Vanilla Cream Tart</p>
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./img/productlist/tart-s-1.png">
+                            <source media="(max-width: 1024px)" srcset="./img/productlist/tart-s-1.png">
+                            <img src="./img/productlist/tart-s-1.png" alt="딸기 바닐라 크림 타르트">
+                        </picture>
+                    </figure>
+                    <div class="copy">
+                        <h3>딸기 바닐라 크림 타르트</h3>
+                        <p>Strawberry Vanilla Cream Tart</p>
+                    </div>
                 </a>
                 <a class="item" href="./product.html" aria-label="블루베리 요거트 타르트 상품 상세 보기">
                     <span class="badge">BEST</span>
-                    <figure><img src="./img/productlist/tart-s-2.png" data-pad-src="./img/productlist/tart-s-2.png"
-                            data-mo-src="./img/productlist/tart-s-2.png" alt="블루베리 요거트 타르트"></figure>
-                    <h3>블루베리 요거트 타르트</h3>
-                    <p>Blueberry Yogurt Tart</p>
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./img/productlist/tart-s-2.png">
+                            <source media="(max-width: 1024px)" srcset="./img/productlist/tart-s-2.png">
+                            <img src="./img/productlist/tart-s-2.png" alt="블루베리 요거트 타르트">
+                        </picture>
+                    </figure>
+                    <div class="copy">
+                        <h3>블루베리 요거트 타르트</h3>
+                        <p>Blueberry Yogurt Tart</p>
+                    </div>
                 </a>
                 <a class="item" href="./product.html" aria-label="애플 시나몬 타르트 상품 상세 보기">
                     <span class="badge">BEST</span>
-                    <figure><img src="./img/productlist/tart-s-3.png" data-pad-src="./img/productlist/tart-s-3.png"
-                            alt="애플 시나몬 타르트"></figure>
-                    <h3>애플 시나몬 타르트</h3>
-                    <p>Apple Cinnamon Tart</p>
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./img/productlist/tart-s-3.png">
+                            <source media="(max-width: 1024px)" srcset="./img/productlist/tart-s-3.png">
+                            <img src="./img/productlist/tart-s-3.png" alt="애플 시나몬 타르트">
+                        </picture>
+                    </figure>
+                    <div class="copy">
+                        <h3>애플 시나몬 타르트</h3>
+                        <p>Apple Cinnamon Tart</p>
+                    </div>
                 </a>
             </div>
         </section>
 
         <div class="middle-banner">
-            <img src="./img/main/banner-middle-main-pc.jpg" data-pad-src="./img/main/banner-middle-main-pad.jpg"
-                data-mo-src="./img/main/banner-middle-main-mo.jpg" alt="Sweet Moments, Freshly Baked - 당신의 하루에 작은 달콤함을">
+            <picture>
+                <source media="(max-width: 768px)" srcset="./img/main/banner-middle-main-mo.jpg">
+                <source media="(max-width: 1024px)" srcset="./img/main/banner-middle-main-pad.jpg">
+                <img src="./img/main/banner-middle-main-pc.jpg" alt="Sweet Moments, Freshly Baked - 당신의 하루에 작은 달콤함을">
+            </picture>
         </div>
 
         <section class="event-section" aria-labelledby="event-title">
             <div class="content-frame">
                 <h2 id="event-title">Event</h2>
                 <div class="event-grid">
-                    <a href="./event-list.html"><img src="./img/main/event-main-pc1.jpg"
-                            data-pad-src="./img/main/event-main-pad1.jpg" data-mo-src="./img/main/event-main-mo1.jpg"
-                            alt="첫 만남은 더 달콤하게, 신규 회원 혜택"></a>
-                    <a href="./event-list.html"><img src="./img/main/event-main-pc2.jpg"
-                            data-pad-src="./img/main/event-main-pad2.jpg" data-mo-src="./img/main/event-main-mo2.jpg"
-                            alt="골라 담는 타르티 박스 할인"></a>
-                    <a href="./event-list.html"><img src="./img/main/event-main-pc3.jpg"
-                            data-pad-src="./img/main/event-main-pad3.jpg" data-mo-src="./img/main/event-main-mo3.jpg"
-                            alt="이달의 과일 타르트"></a>
+                    <a href="./event-list.html">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./img/main/event-main-mo1.jpg">
+                            <source media="(max-width: 1024px)" srcset="./img/main/event-main-pad1.jpg">
+                            <img src="./img/main/event-main-pc1.jpg" alt="첫 만남은 더 달콤하게, 신규 회원 혜택">
+                        </picture>
+                    </a>
+                    <a href="./event-list.html">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./img/main/event-main-mo2.jpg">
+                            <source media="(max-width: 1024px)" srcset="./img/main/event-main-pad2.jpg">
+                            <img src="./img/main/event-main-pc2.jpg" alt="골라 담는 타르티 박스 할인">
+                        </picture>
+                    </a>
+                    <a href="./event-list.html">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./img/main/event-main-mo3.jpg">
+                            <source media="(max-width: 1024px)" srcset="./img/main/event-main-pad3.jpg">
+                            <img src="./img/main/event-main-pc3.jpg" alt="이달의 과일 타르트">
+                        </picture>
+                    </a>
                     <a class="event-more-mobile" href="./event-list.html">MORE <span aria-hidden="true">→</span></a>
                 </div>
                 <a class="event-more" href="./event-list.html">MORE →</a>
@@ -233,25 +296,46 @@
                     <strong>TARTY, your sweet little moment</strong>
                 </div>
                 <div class="insta-grid">
-                    <img src="./img/main/insta-main-pc1.jpg" data-pad-src="./img/main/insta-main-pad1.jpg"
-                        data-mo-src="./img/main/insta-main-mo1.jpg" alt="딸기 타르트">
-                    <img src="./img/main/insta-main-pc2.jpg" data-pad-src="./img/main/insta-main-pad2.jpg"
-                        data-mo-src="./img/main/insta-main-mo2.jpg" alt="미니 타르트 모음">
-                    <img src="./img/main/insta-main-pc3.jpg" data-pad-src="./img/main/insta-main-pad3.jpg"
-                        data-mo-src="./img/main/insta-main-mo3.jpg" alt="피스타치오 타르트">
-                    <img src="./img/main/insta-main-pc4.jpg" data-pad-src="./img/main/insta-main-pad4.jpg"
-                        data-mo-src="./img/main/insta-main-mo4.jpg" alt="딸기 크림 타르트">
-                    <img src="./img/main/insta-main-pc5.jpg" data-pad-src="./img/main/insta-main-pad5.jpg"
-                        data-mo-src="./img/main/insta-main-mo5.jpg" alt="초콜릿 디저트">
-                    <img src="./img/main/insta-main-pc6.jpg" data-pad-src="./img/main/insta-main-pad6.jpg"
-                        data-mo-src="./img/main/insta-main-mo6.jpg" alt="초콜릿 타르트">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./img/main/insta-main-mo1.jpg">
+                        <source media="(max-width: 1024px)" srcset="./img/main/insta-main-pad1.jpg">
+                        <img src="./img/main/insta-main-pc1.jpg" alt="딸기 타르트">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./img/main/insta-main-mo2.jpg">
+                        <source media="(max-width: 1024px)" srcset="./img/main/insta-main-pad2.jpg">
+                        <img src="./img/main/insta-main-pc2.jpg" alt="미니 타르트 모음">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./img/main/insta-main-mo3.jpg">
+                        <source media="(max-width: 1024px)" srcset="./img/main/insta-main-pad3.jpg">
+                        <img src="./img/main/insta-main-pc3.jpg" alt="피스타치오 타르트">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./img/main/insta-main-mo4.jpg">
+                        <source media="(max-width: 1024px)" srcset="./img/main/insta-main-pad4.jpg">
+                        <img src="./img/main/insta-main-pc4.jpg" alt="딸기 크림 타르트">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./img/main/insta-main-mo5.jpg">
+                        <source media="(max-width: 1024px)" srcset="./img/main/insta-main-pad5.jpg">
+                        <img src="./img/main/insta-main-pc5.jpg" alt="초콜릿 디저트">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./img/main/insta-main-mo6.jpg">
+                        <source media="(max-width: 1024px)" srcset="./img/main/insta-main-pad6.jpg">
+                        <img src="./img/main/insta-main-pc6.jpg" alt="초콜릿 타르트">
+                    </picture>
                 </div>
             </div>
         </section>
 
         <a class="stamp-banner" href="./product-list.html">
-            <img src="./img/main/banner-bottom-main-pc.jpg" data-pad-src="./img/main/banner-bottom-main-pad.jpg"
-                data-mo-src="./img/main/banner-bottom-main-mo.jpg" alt="주문 5회 시 미니타르트 1개, 주문 1건당 스탬프 1개 적립">
+            <picture>
+                <source media="(max-width: 768px)" srcset="./img/main/banner-bottom-main-mo.jpg">
+                <source media="(max-width: 1024px)" srcset="./img/main/banner-bottom-main-pad.jpg">
+                <img src="./img/main/banner-bottom-main-pc.jpg" alt="주문 5회 시 미니타르트 1개, 주문 1건당 스탬프 1개 적립">
+            </picture>
         </a>
     </main>
 
