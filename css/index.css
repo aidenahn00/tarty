@@ -417,10 +417,6 @@
     }
 
     @media (max-width: 1200px) {
-        .best-menu .items {
-            grid-template-columns: repeat(3, minmax(0, 291px));
-        }
-
         .insta-section {
             grid-template-columns: 300px 618px;
         }

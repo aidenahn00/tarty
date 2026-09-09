@@ -6,6 +6,8 @@
     right: 0;
     z-index: 10000;
     background-color: rgba(0, 0, 0, .25);
+
+    display: none;
 }
 
 .popup {
@@ -22,6 +24,8 @@
     box-shadow: 0 3px 14px rgb(0 0 0 / 22%);
     font-family: 'Pretendard', sans-serif;
     container-type: inline-size;
+
+    display: none;
 }
 
 @media (max-width: 1024px) {
