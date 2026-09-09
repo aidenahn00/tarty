@@ -235,7 +235,6 @@ body {
     }
 
     .making-card img {
-        width: 40%;
         max-width: 140px;
         flex: 0 0 40%;
     }

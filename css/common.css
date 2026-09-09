@@ -179,6 +179,7 @@ html {
     display: none;
 }
 
+
 @media (max-width: 1024px) {
     html {
         font-size: var(--fs-pad);
@@ -224,10 +225,17 @@ html {
 }
 
 
+@media (max-width: 304px) {
+    .benefit-bar span {
+        font-size: 10px;
+    }
+}
 
 
+
+
+/* 띠 배너 */
 @media (max-width: 860px) {
-    /* 띠 배너 */
     .banner-line .common-frame span,
     .banner-line .common-frame p {
         display: none;

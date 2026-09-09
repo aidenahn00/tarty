@@ -106,3 +106,9 @@
     outline: 2px solid var(--color-point1);
     outline-offset: 3px;
 }
+
+@media (max-width: 360px) {
+    .popup {
+        width: calc(100vw - 2rem);
+    }
+}

@@ -303,3 +303,12 @@
         transition: none;
     }
 }
+
+@media (max-width: 304px) {
+    .login-password-wrap input {
+        padding-right: 0;
+    }
+    .login-page button {
+        display: none;
+    }
+}
