@@ -467,7 +467,6 @@
     @media (max-width: 1075px) {
         .insta-section {
             max-width: none;
-            width: 100%;
 
             min-height: auto;
             grid-template-columns: 1fr;
@@ -512,6 +511,10 @@
     @media (max-width: 768px) {
         .content-frame {
             width: calc(100% - 32px);
+        }
+
+        .best-menu .items {
+            max-width: 400px;
         }
 
         .hero-slider .swiper-slide img {
@@ -578,6 +581,8 @@
         .middle-banner img {
             object-fit: cover;
             object-position: center;
+        
+            max-width: 402px;
         }
 
         .event-section .content-frame {
@@ -629,6 +634,8 @@
         .stamp-banner img {
             object-fit: cover;
             object-position: center;
+
+            max-width: 402px;
         }
     }
 
