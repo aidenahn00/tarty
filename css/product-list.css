@@ -165,3 +165,7 @@ body {
         column-gap: 14px;
     }
 }
+
+.menu-h2 {
+    display: none !important;
+}
