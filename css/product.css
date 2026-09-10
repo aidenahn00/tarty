@@ -72,11 +72,13 @@
     margin: 1rem 0;
     font-size: var(--fs-h1);
     font-weight: var(--fw1);
+    line-height: 1;
 }
 
 .product-price {
     font-size: var(--fs-h1);
     font-weight: var(--fw1);
+    line-height: 1;
 }
 
 .share-button {
