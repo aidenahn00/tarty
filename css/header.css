@@ -436,7 +436,7 @@ main {
 
     .account-panel a {
         min-height: 64px;
-        padding: 0 28px;
+        padding: 0 24px;
         display: flex;
         align-items: center;
         gap: 12px;
@@ -540,7 +540,7 @@ main {
     }
 
     .main-nav .submenu a {
-        padding: 20px 24px;
+        padding: 16px 24px;
     }
 
     .main-nav>ul>.nav-item.is-expanded>.submenu {
@@ -571,9 +571,5 @@ main {
 
     .main-nav>ul>li:last-child {
         border-bottom: 0;
-    }
-
-    .main-nav .submenu a {
-        padding: 14px 28px;
     }
 }
