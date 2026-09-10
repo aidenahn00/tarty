@@ -152,10 +152,10 @@
         </section>
         <section class="event-catalog" aria-label="이벤트 목록">
             <div class="event-tabs" role="tablist" aria-label="이벤트 상태">
-                <button class="is-active" type="button" role="tab" aria-selected="true" data-status="active">진행 중</button>
-                <button type="button" role="tab" aria-selected="false" data-status="ended">종료</button>
+                <button class="is-active" type="button" role="tab" aria-selected="true" aria-controls="tab-01" data-status="active">진행 중</button>
+                <button type="button" role="tab" aria-selected="false" aria-controls="tab-02" data-status="ended">종료</button>
             </div>
-            <div class="event-grid-list" role="tabpanel">
+            <div class="event-grid-list" role="tabpanel" aria-labelledby="tab-01">
                 <a class="event-card" href="#" data-status="active">
                     <picture>
                         <source media="(max-width: 768px)" srcset="./img/event/event1-1.jpg">
@@ -247,7 +247,7 @@
                     </div>
                 </a>
             </div>
-            <p class="event-empty" id="ended-events" role="tabpanel" hidden>종료된 이벤트가 없습니다.</p>
+            <p class="event-empty" id="ended-events" role="tabpanel" aria-labelledby="tab-02" hidden>종료된 이벤트가 없습니다.</p>
         </section>
     </main>
 

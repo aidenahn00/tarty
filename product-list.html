@@ -155,12 +155,12 @@
         <section class="menu-catalog" aria-label="타르트 메뉴 목록">
 
             <div class="size-tabs event-tabs" role="tablist" aria-label="타르트 크기">
-                <button class="is-active" type="button" role="tab" aria-selected="true" data-size="mini">미니</button>
-                <button type="button" role="tab" aria-selected="false" data-size="medium">미디움</button>
-                <button type="button" role="tab" aria-selected="false" data-size="big">빅</button>
+                <button class="is-active" type="button" role="tab" aria-selected="true" aria-controls="tab-01" data-size="mini">미니</button>
+                <button type="button" role="tab" aria-selected="false" aria-controls="tab-02" data-size="medium">미디움</button>
+                <button type="button" role="tab" aria-selected="false" aria-controls="tab-03" data-size="big">빅</button>
             </div>
 
-            <div class="product-grid" aria-live="polite" role="tabpanel">
+            <div class="product-grid" aria-live="polite" role="tabpanel" aria-labelledby="tab-01">
                 <a class="menu-card" href="./product.html" data-size="mini"><span
                     class="menu-badge best">BEST</span><img src="./img/productlist/tart-s-1.png"
                     data-pad-src="./img/productlist/tart-s-1.png" data-mo-src="./img/productlist/tart-s-1.png" alt="딸기 바닐라 크림 타르트">
@@ -273,7 +273,8 @@
                     </div>
                 </a>
             </div>
-            <p class="empty-message" role="tabpanel" hidden>해당 사이즈의 상품을 준비 중입니다.</p>
+            <p class="empty-message" role="tabpanel" aria-labelledby="tab-02" hidden>해당 사이즈의 상품을 준비 중입니다.</p>
+            <p class="empty-message" role="tabpanel" aria-labelledby="tab-03" hidden>해당 사이즈의 상품을 준비 중입니다.</p>
         </section>
     </main>
 
