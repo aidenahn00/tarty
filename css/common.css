@@ -600,3 +600,7 @@ html {
         min-width: 90px;
     }
 }
+
+h1 {
+    display: none !important;
+}
