@@ -68,7 +68,7 @@
     font-weight: var(--fw2);
 }
 
-.product-heading h1 {
+.product-heading h2 {
     margin: 1rem 0;
     font-size: var(--fs-h1);
     font-weight: var(--fw1);
@@ -416,7 +416,7 @@
 }
 
 @media (max-width: 580px) {
-    .product-heading h1 {
+    .product-heading h2 {
         font-size: var(--fs-h2);
     }
     .product-price {
